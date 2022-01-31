@@ -1,48 +1,47 @@
 .grid-center {
-    display: grid;
-    place-content: center;
+	display: grid;
+	place-content: center;
 }
 
 .flex {
-    display: flex;
+	display: flex;
 }
 
 .flex-column {
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .flex-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .flex-col-align-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .flex-align-left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
-
 .component_display_container {
-    background-color: rgb(245, 245, 248);
-    padding: 2rem;
-    margin: 2rem auto 2rem auto;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 80%;
-    border: 1px solid var(--COLOR-PRIMARY);
-    border-radius: 2rem;
+	background-color: rgb(245, 245, 248);
+	padding: 2rem;
+	margin: 2rem auto 2rem auto;
+	gap: 1rem;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 80%;
+	border: 1px solid var(--COLOR-PRIMARY);
+	border-radius: 2rem;
 }
 
 .fw {
-    width: 100%;
+	width: 100%;
 }

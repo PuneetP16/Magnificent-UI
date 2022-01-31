@@ -1,158 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+		<title>Avatar</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/style.css">
-    <title>Avatar</title>
-</head>
+	<body>
+		<header class="header flex-align-left">
+			<h1 class="logo_text">Magni<span class="ficent">ficent</span> UI</h1>
+		</header>
+		<nav class="nav flex-col-align-center">
+			<h1 class="h4 nav_head">Get Started</h1>
+			<ul class="nav_items_list flex-col-align-center">
+				<li class="nav_items">
+					<a class="nav_links" href="#">Installation</a>
+				</li>
+				<li class="nav_items"><a class="nav_links" href="#">Colors</a></li>
+				<li class="nav_items"><a class="nav_links" href="#">Typography</a></li>
+			</ul>
+			<h1 class="h4 nav_head">Components</h1>
+			<ul class="nav_items_list flex-col-align-center">
+				<li class="nav_items">
+					<a
+						class="nav_links nav_link-selected"
+						href="/src/components/avatar/avatar.html"
+						>Avatar</a
+					>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/badge/badge.html">Badge</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/alert/alert.html">Alert</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/button/button.html"
+						>Button</a
+					>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/card/card.html">Card</a>
+				</li>
+			</ul>
+		</nav>
+		<main class="main">
+			<!-- ----AVATAR----- -->
 
-<body>
-    <header class="header flex-align-left">
-        <h1 class="logo_text">Magni<span class="ficent">ficent</span> UI</h1>
-    </header>
-    <nav class="nav flex-col-align-center">
-        <h1 class="h4 nav_head">Get Started</h1>
-        <ul class="nav_items_list flex-col-align-center">
-            <li class="nav_items"><a class="nav_links" href="#">Installation</a> </li>
-            <li class="nav_items"><a class="nav_links" href="#">Colors</a> </li>
-            <li class="nav_items"><a class="nav_links" href="#">Typography</a> </li>
-        </ul>
-        <h1 class="h4 nav_head">Components</h1>
-        <ul class="nav_items_list flex-col-align-center">
-            <li class="nav_items"><a class="nav_links nav_link-selected" href="/src/components/avatar/avatar.html">Avatar</a> </li>
-            <li class="nav_items"><a class="nav_links" href="/src/components/badge/badge.html">Badge</a> </li>
-            <li class="nav_items"><a class="nav_links" href="/src/components/alert/alert.html">Alert</a> </li>
-            <li class="nav_items"><a class="nav_links" href="/src/components/button/button.html">Button</a> </li>
-            <li class="nav_items"><a class="nav_links" href="/src/components/card/card.html">Card</a> </li>
-        </ul>
-    </nav>
-    <main class="main">
+			<h2 class="h2 m_doc-heading">Avatar</h2>
+			<hr />
+			<p class="m_doc-para">
+				Avatar can be used to show user's profile picture on profile information
+				page, on navigation bar and in blogs grid items.
+			</p>
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<code class="iframe_code">
+					<iframe
+						class="iframe"
+						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Favatar%252Favatar.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Favatar%252Favatar.css%2522%253E"
+						style="width: 813px; height: 186px; border: 0; transform: scale(1)"
+						sandbox="allow-scripts allow-same-origin"
+					>
+					</iframe>
+				</code>
+			</div>
 
-        <!-- ----AVATAR----- -->
+			<!-- Standard avatar component -->
+			<h3>Standard Round Avatars</h3>
 
-        <h2 class="h2 m_doc-heading">Avatar</h2>
-        <hr>
-        <p class="m_doc-para">Avatar can be used to show user's profile picture on profile information page, on
-            navigation bar and in blogs grid
-            items.</p>
-        <!-- code snippet container -->
-        <div class="iframe_wrapper">
-            <code class="iframe_code">
-                <iframe class="iframe"
-                    src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Favatar%252Favatar.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Favatar%252Favatar.css%2522%253E"
-                    style="width: 813px; height: 186px; border:0; transform: scale(1);"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </code>
-        </div>
+			<!-- code snippet container -->
 
-        <!-- Standard avatar component -->
-        <h3>Standard Round Avatars</h3>
+			<p class="m_doc-para lh4">
+				The avatar component has 4 sizes <br /><span class="m_doc_classes"
+					>avatar--lg</span
+				>
+				<span class="m_doc_classes">avatar--md</span>
+				<span class="m_doc_classes">avatar--sm</span>
+				<span class="m_doc_classes">avatar--xs</span>
+			</p>
 
-        <!-- code snippet container -->
+			<!-- component display container -->
+			<div class="component_display_container flex-center margin-top">
+				<div class="avatar avatar--lg">
+					<img src="/src/assets/avatar/av1.jpg" alt="random avatar" />
+				</div>
 
+				<div class="avatar avatar--md">
+					<img src="/src/assets/avatar/av2.jpg" alt="random avatar" />
+				</div>
 
-        <p class="m_doc-para lh4">The avatar component has 4 sizes <br><span class="m_doc_classes">avatar--lg</span> <span class="m_doc_classes">avatar--md</span> <span class="m_doc_classes">avatar--sm</span> <span class="m_doc_classes">avatar--xs</span></p>
+				<div class="avatar avatar--sm">
+					<img src="/src/assets/avatar/av3.jpg" alt="random avatar" />
+				</div>
 
-      
+				<div class="avatar avatar--xs">
+					<img src="/src/assets/avatar/av4.jpg" alt="random avatar" />
+				</div>
+			</div>
 
-        <!-- component display container -->
-        <div class="component_display_container flex-center margin-top">
-            <div class="avatar avatar--lg"><img src="/src/assets/avatar/av1.jpg" alt="random avatar"></div>
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<code class="iframe_code">
+					<iframe
+						class="iframe"
+						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--md%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%253C%252Fdiv%253E%250A"
+						style="width: 813px; height: 256px; border: 0; transform: scale(1)"
+						sandbox="allow-scripts allow-same-origin"
+					>
+					</iframe>
+				</code>
+			</div>
 
-            <div class="avatar avatar--md"><img src="/src/assets/avatar/av2.jpg" alt="random avatar"></div>
+			<!--  avatar with status component -->
+			<h3>Round Avatars with Status</h3>
 
-            <div class="avatar avatar--sm"><img src="/src/assets/avatar/av3.jpg" alt="random avatar"></div>
+			<p class="m_doc-para lh4">
+				Avatars support status indicators. There are four indicators: <br />
+				<span class="m_doc_classes color_online">avatar__status--online</span>
+				<span class="m_doc_classes color_offline">avatar__status--offline</span>
+				<span class="m_doc_classes color_idle">avatar__status--idle</span>
+				<span class="m_doc_classes color_busy">avatar__status--busy</span>
+			</p>
 
-            <div class="avatar avatar--xs"><img src="/src/assets/avatar/av4.jpg" alt="random avatar"></div>
-        </div>
+			<!-- component display container -->
+			<div class="component_display_container flex-center margin-top">
+				<div class="avatar avatar--lg">
+					<img src="/src/assets/avatar/av9.jpg" alt="random avatar" />
+					<div class="avatar__status avatar__status--online"></div>
+				</div>
 
-          <!-- code snippet container -->
-          <div class="iframe_wrapper">
-            <code class="iframe_code">
-                <iframe class="iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--md%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%253C%252Fdiv%253E%250A"
-                    style="width: 813px; height: 256px; border:0; transform: scale(1);"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </code>
-        </div>
+				<div class="avatar avatar--md">
+					<img src="/src/assets/avatar/av10.jpg" alt="random avatar" />
+					<div class="avatar__status avatar__status--offline"></div>
+				</div>
 
-        <!--  avatar with status component -->
-        <h3>Round Avatars with Status</h3>
+				<div class="avatar avatar--sm">
+					<img src="/src/assets/avatar/av11.jpg" alt="random avatar" />
+					<div class="avatar__status avatar__status--busy"></div>
+				</div>
 
-        <p class="m_doc-para lh4">Avatars support status indicators. There are four indicators: <br> 
-            <span class="m_doc_classes color_online">avatar__status--online</span> <span class="m_doc_classes color_offline">avatar__status--offline</span> <span class="m_doc_classes color_idle">avatar__status--idle</span> <span class="m_doc_classes color_busy">avatar__status--busy</span></p>
+				<div class="avatar avatar--xs">
+					<img src="/src/assets/avatar/av12.jpg" alt="random avatar" />
+					<div class="avatar__status avatar__status--idle"></div>
+				</div>
+			</div>
 
-        <!-- component display container -->
-        <div class="component_display_container flex-center margin-top">
-            <div class="avatar avatar--lg"><img src="/src/assets/avatar/av9.jpg" alt="random avatar">
-                <div class="avatar__status avatar__status--online"></div>
-            </div>
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<code class="iframe_code">
+					<iframe
+						class="iframe"
+						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%2520with%2520avatar%2520status%2520online%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar__status%2520avatar__status--online%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%2520with%2520avatar%2520status%2520offline%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--md%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar__status%2520avatar__status--offline%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+						style="width: 813px; height: 296px; border: 0; transform: scale(1)"
+						sandbox="allow-scripts allow-same-origin"
+					>
+					</iframe>
+				</code>
+			</div>
 
-            <div class="avatar avatar--md"><img src="/src/assets/avatar/av10.jpg" alt="random avatar">
-                <div class="avatar__status avatar__status--offline"></div>
-            </div>
+			<!-- AVATAR WITH TEXT component -->
+			<h3>Text Avatars</h3>
 
-            <div class="avatar avatar--sm"><img src="/src/assets/avatar/av11.jpg" alt="random avatar">
-                <div class="avatar__status avatar__status--busy"></div>
-            </div>
+			<!-- code snippet container -->
 
-            <div class="avatar avatar--xs"><img src="/src/assets/avatar/av12.jpg" alt="random avatar">
-                <div class="avatar__status avatar__status--idle"></div>
-            </div>
-        </div>
+			<p class="m_doc-para">
+				You can use initial letters of user in Avatar as well. You need to
+				include class avatar-text along with avatar and size class. (e.g.
+				class="avatar avatar__text avatar--lg avatar__text--lg")
+			</p>
 
-        <!-- code snippet container -->
-        <div class="iframe_wrapper">
-            <code class="iframe_code">
-                <iframe class="iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%2520with%2520avatar%2520status%2520online%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar__status%2520avatar__status--online%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%2520with%2520avatar%2520status%2520offline%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--md%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar__status%2520avatar__status--offline%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-                style="width: 813px; height: 296px; border:0; transform: scale(1);"
-                sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </code>
-        </div>
+			<!-- component display container -->
+			<div class="component_display_container flex-center margin-top">
+				<div class="avatar avatar__text avatar--lg avatar__text--lg">text</div>
 
-        <!-- AVATAR WITH TEXT component -->
-        <h3>Text Avatars</h3>
+				<div class="avatar avatar__text avatar--md avatar__text--md">text</div>
 
-        <!-- code snippet container -->
+				<div class="avatar avatar__text avatar--sm avatar__text--sm">text</div>
 
+				<div class="avatar avatar__text avatar--xs avatar__text--xs">text</div>
+			</div>
 
-        <p class="m_doc-para">You can use initial letters of user in Avatar as well. You need to include class
-            avatar-text along with avatar
-            and size class. (e.g. class="avatar avatar__text avatar--lg avatar__text--lg")</p>
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<code class="iframe_code">
+					<iframe
+						class="iframe"
+						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%2520avatar%2520text%250A%253Cdiv%2520class%253D%2522avatar%2520avatar__text%2520avatar--lg%2520avatar__text--lg%2522%253Etext%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%2520avatar%2520text%250A%253Cdiv%2520class%253D%2522avatar%2520avatar__text%2520avatar--md%2520avatar__text--md%2522%253Etext%253C%252Fdiv%253E%250A"
+						style="width: 813px; height: 186px; border: 0; transform: scale(1)"
+						sandbox="allow-scripts allow-same-origin"
+					>
+					</iframe>
+				</code>
+			</div>
 
-        <!-- component display container -->
-        <div class="component_display_container flex-center margin-top">
-            <div class="avatar avatar__text avatar--lg avatar__text--lg">text</div>
-
-            <div class="avatar avatar__text avatar--md avatar__text--md">text</div>
-
-            <div class="avatar avatar__text avatar--sm avatar__text--sm">text</div>
-
-            <div class="avatar avatar__text avatar--xs avatar__text--xs">text</div>
-        </div>
-
-         <!-- code snippet container -->
-         <div class="iframe_wrapper">
-            <code class="iframe_code">
-                <iframe class="iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%2520avatar%2520text%250A%253Cdiv%2520class%253D%2522avatar%2520avatar__text%2520avatar--lg%2520avatar__text--lg%2522%253Etext%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%2520avatar%2520text%250A%253Cdiv%2520class%253D%2522avatar%2520avatar__text%2520avatar--md%2520avatar__text--md%2522%253Etext%253C%252Fdiv%253E%250A"
-                    style="width: 813px; height: 186px; border:0; transform: scale(1);"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </code>
-        </div>
-
-        <p class="note_size"><span><b>Note: </b></span><span>Used 10px as root font size.</span></p>
-    </main>
-
-</body>
-
+			<p class="note_size">
+				<span><b>Note: </b></span><span>Used 10px as root font size.</span>
+			</p>
+		</main>
+	</body>
 </html>
