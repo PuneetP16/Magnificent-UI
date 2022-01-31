@@ -1,0 +1,14 @@
+.iframe_wrapper {
+    border-radius: 2rem;
+    overflow-x:auto;
+    width: 80%;
+    margin: 3rem auto 4rem auto;
+    padding-top: 1rem;
+    background: #2D2B55;
+    text-align: center;
+}
+
+.iframe_code {
+    margin:0;
+    padding:0;
+}

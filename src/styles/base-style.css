@@ -1,0 +1,113 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap');
+
+/* Css-reset */
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+:root {
+    --COLOR-BG:lavender;
+
+    --COLOR-PRIMARY-LIGHT:#e9d5ff;
+    --COLOR-PRIMARY:#a855f7;
+    --COLOR-PRIMARY-DARK:#6b21a8;
+    --COLOR-PRIMARY-HOVER:#e9d5ff;
+    
+    --COLOR-SECONDARY-LIGHT:#ccfbf1;
+    --COLOR-SECONDARY: #99f6e4;
+    --COLOR-SECONDARY-DARK:#0d9488;
+    --COLOR-SECONDARY-HOVER:#f0fdfa;
+    --COLOR-SECONDARY-500:#14b8a6;
+
+    --COLOR-OFF-WHITE:#d8bdf3;
+    --COLOR-PLACEHOLDER: #291938;
+    --COLOR-PRIMARY-TEXT: rgba(10, 10, 10, 0.95);
+
+    /* --ALERT-- */
+    --COLOR-BLUE-500:#3b82f6;
+    --COLOR-GREEN-500:#22c55e;
+    --COLOR-RED-500:#ef4444;
+    --COLOR-ORANGE-500:#f97316;
+
+
+    /* --AVATAR-- */
+
+    --COLOR-AVATAR-TEXT:#581c87;
+    --COLOR-AVATAR-STATUS-ONLINE:#57ff95;
+    --COLOR-AVATAR-STATUS-OFFLINE:rgb(211, 221, 216);
+    --COLOR-AVATAR-STATUS-IDLE:#ffe26d;
+    --COLOR-AVATAR-STATUS-BUSY:#ff7171;
+
+
+    /* FONT */
+
+    --FONT-BADGE-PRIMARY:1.6rem;
+    --FONT-BADGE-SECONDAY:2.6rem;
+
+    /* Badge-size */
+
+    --BADGE-SIZE-PRIMARY:2.5rem;
+    --BADGE-SIZE-SECONDARY:3.4rem;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    background-color: var(--COLOR-BG);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: 'IBM Plex Sans', sans-serif;   
+}
+
+/* responsive images */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
