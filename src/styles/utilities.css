@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.flex-col-align-left {
+.flex-align-left {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

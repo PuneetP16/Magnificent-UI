@@ -7,10 +7,14 @@ body {
     grid-template-rows: 6rem calc(100vh - 6rem);
     grid-template-areas:
         "header header"
-        "nav main"
+        "nav main";
+    transition: all 0.3s ease-in;
 }
 
 @media only screen and (max-width:720px) {
+    :root{
+        font-size: 50%;
+    }
     body {
         text-align: center;
         grid-template-areas:
@@ -23,8 +27,17 @@ body {
 
     .header, 
     .main {
-        margin:auto;
-        padding: 1rem!important;
+        justify-content: center;
+        padding: 10px!important;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    :root{
+        font-size: 40%;
+    }
+    .nav_links {
+        width: 10rem;
     }
 }
 
@@ -94,7 +107,7 @@ hr {
     display: inline-block;
     text-decoration: none;
     padding: 0.4rem;
-    width: 70%;
+    width: 100px;
     border-radius: 8px;
     color: white;
 }
