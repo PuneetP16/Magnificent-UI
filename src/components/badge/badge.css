@@ -21,15 +21,17 @@
 }
 
 .color-primary-bg {
-	background-color: var(--COLOR-PRIMARY);
+	background-color: var(--COLOR-PRIMARY-DARK);
+    color:white;
 }
 
 .color-secondary-bg {
-	background-color: var(--COLOR-SECONDARY);
+	background-color: var(--COLOR-SECONDARY-DARK);
 }
 
 .color-tertiary-bg {
-	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
+	background-color: var(--COLOR-PRIMARY-DARK);
+    color: white;
 }
 
 .w-h-lh-sm {

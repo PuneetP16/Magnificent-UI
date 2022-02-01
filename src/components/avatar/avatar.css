@@ -11,7 +11,7 @@
 	align-items: center;
 	background-color: var(--COLOR-SECONDARY);
 	line-height: 3rem;
-	color: var(-COLOR-AVATAR-TEXT);
+	color: var(--COLOR-AVATAR-TEXT);
 }
 
 .avatar__text--lg {
@@ -32,22 +32,22 @@
 
 .avatar--lg {
 	width: 12rem;
-	font-size: 3rem;
+	font-size: 5rem;
 }
 
 .avatar--md {
 	width: 8rem;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 .avatar--sm {
 	width: 6rem;
-	font-size: 1.5rem;
+	font-size: 3rem;
 }
 
 .avatar--xs {
 	width: 4rem;
-	font-size: 1rem;
+	font-size: 2rem;
 }
 
 .avatar > img {
@@ -59,14 +59,16 @@
 
 .avatar__status {
 	position: absolute;
-	padding: 0.35em;
+	padding: 0.25em;
 	border: 0.2rem solid white;
 	border-radius: 50%;
-	bottom: 0.2em;
-	right: 0.2em;
+	bottom: 0;
+	right: 0;
 }
 
 .avatar__status--online {
+  bottom: 3px;
+	right: 3px;
 	background-color: var(--COLOR-AVATAR-STATUS-ONLINE);
 }
 
@@ -76,8 +78,6 @@
 
 .avatar__status--busy {
 	background-color: var(--COLOR-AVATAR-STATUS-IDLE);
-	bottom: 0.2em;
-	right: 0.2em;
 }
 
 .avatar__status--idle {

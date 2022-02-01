@@ -14,7 +14,7 @@
 
 	<body>
 		<header class="header flex-align-left">
-			<h1 class="logo_text">Magni<span class="ficent">ficent</span> UI</h1>
+			<div class="logo_text grid-center">Magnificent UI</div>
 		</header>
 		<nav class="nav flex-col-align-center">
 			<h1 class="h4 nav_head">Get Started</h1>
@@ -48,13 +48,23 @@
 				<li class="nav_items">
 					<a class="nav_links" href="/src/components/card/card.html">Card</a>
 				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/card/card.html">Input</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/card/card.html">Form</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/card/card.html"
+						>Snackbar</a
+					>
+				</li>
 			</ul>
 		</nav>
 		<main class="main">
 			<!-- ----AVATAR----- -->
 
 			<h2 class="h2 m_doc-heading">Avatar</h2>
-			<hr />
 			<p class="m_doc-para">
 				Avatar can be used to show user's profile picture on profile information
 				page, on navigation bar and in blogs grid items.
@@ -77,7 +87,7 @@
 
 			<!-- code snippet container -->
 
-			<p class="m_doc-para lh4">
+			<p class="m_doc-para">
 				The avatar component has 4 sizes <br /><span class="m_doc_classes"
 					>avatar--lg</span
 				>
@@ -121,7 +131,7 @@
 			<!--  avatar with status component -->
 			<h3>Round Avatars with Status</h3>
 
-			<p class="m_doc-para lh4">
+			<p class="m_doc-para">
 				Avatars support status indicators. There are four indicators: <br />
 				<span class="m_doc_classes color_online">avatar__status--online</span>
 				<span class="m_doc_classes color_offline">avatar__status--offline</span>
@@ -168,23 +178,28 @@
 			<!-- AVATAR WITH TEXT component -->
 			<h3>Text Avatars</h3>
 
-			<!-- code snippet container -->
+			<!-- m_doc-para -->
 
-			<p class="m_doc-para">
+            <p class="m_doc-para">
 				You can use initial letters of user in Avatar as well. You need to
-				include class avatar-text along with avatar and size class. (e.g.
-				class="avatar avatar__text avatar--lg avatar__text--lg")
+				include class avatar-text along with avatar and size class.
+
+                <br>
+				<span class="m_doc_classes">avatar__text</span>
+				<span class="m_doc_classes">avatar--lg</span> with
+				<span class="m_doc_classes">avatar__text--lg</span> and <span class="m_doc_classes">avatar--sm</span> with
+				<span class="m_doc_classes">avatar__text--sm</span>
 			</p>
 
 			<!-- component display container -->
 			<div class="component_display_container flex-center margin-top">
-				<div class="avatar avatar__text avatar--lg avatar__text--lg">text</div>
+				<div class="avatar avatar__text avatar--lg avatar__text--lg">AB</div>
 
-				<div class="avatar avatar__text avatar--md avatar__text--md">text</div>
+				<div class="avatar avatar__text avatar--md avatar__text--md">AB</div>
 
-				<div class="avatar avatar__text avatar--sm avatar__text--sm">text</div>
+				<div class="avatar avatar__text avatar--sm avatar__text--sm">AB</div>
 
-				<div class="avatar avatar__text avatar--xs avatar__text--xs">text</div>
+				<div class="avatar avatar__text avatar--xs avatar__text--xs">AB</div>
 			</div>
 
 			<!-- code snippet container -->
