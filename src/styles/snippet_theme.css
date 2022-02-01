@@ -1,0 +1,20 @@
+.iframe_wrapper_main {
+	border-radius: 2rem;
+	overflow-x: auto;
+	width: var(--WIDTH-MAIN-CONTENT);
+	margin: 3rem auto 4rem 0;
+	padding-top: 1rem;
+	background: #2d2b55;
+	text-align: center;
+}
+
+
+.iframe_wrapper {
+	border-radius: 2rem;
+	overflow-x: auto;
+	width: var(--WIDTH-MAIN-CONTENT);
+	margin: 3rem auto 4rem 0;
+	padding-top: 1rem;
+	background: #2d2b55;
+	text-align: center;
+}

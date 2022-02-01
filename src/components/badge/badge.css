@@ -1,0 +1,78 @@
+@import url(/src/magnificent.css);
+
+.badges > * {
+	margin-bottom: 1.7rem;
+}
+
+.badge_base {
+	position: relative;
+}
+
+.badge {
+	border: none;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	font-weight: 800;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+}
+
+.color-primary-bg {
+	background-color: var(--COLOR-PRIMARY-DARK);
+    color:white;
+}
+
+.color-secondary-bg {
+	background-color: var(--COLOR-SECONDARY-DARK);
+}
+
+.color-tertiary-bg {
+	background-color: var(--COLOR-PRIMARY-DARK);
+    color: white;
+}
+
+.w-h-lh-sm {
+	width: var(--BADGE-SIZE-PRIMARY);
+	height: var(--BADGE-SIZE-PRIMARY);
+	line-height: var(--BADGE-SIZE-PRIMARY);
+	font-size: var(--FONT-BADGE-PRIMARY);
+}
+
+.position-left-top-sm {
+	top: calc(var(--BADGE-SIZE-PRIMARY) / -2);
+	left: calc(var(--BADGE-SIZE-PRIMARY) / -2);
+}
+
+.position-right-top-sm {
+	top: calc(var(--BADGE-SIZE-PRIMARY) / -2);
+	right: calc(var(--BADGE-SIZE-PRIMARY) / -2);
+}
+
+.w-h-lh-lg {
+	width: var(--BADGE-SIZE-SECONDARY);
+	padding: 1rem;
+	height: var(--BADGE-SIZE-SECONDARY);
+	line-height: var(--BADGE-SIZE-SECONDARY);
+	font-size: var(--FONT-BADGE-PRIMARY);
+}
+
+.position-left-top-lg {
+	top: calc(var(--BADGE-SIZE-SECONDARY) / -2);
+	left: calc(var(--BADGE-SIZE-SECONDARY) / -2);
+}
+
+.position-right-top-lg {
+	top: calc(var(--BADGE-SIZE-SECONDARY) / -2);
+	right: calc(var(--BADGE-SIZE-SECONDARY) / -2);
+}
+
+.icon_badge {
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	top: -2rem;
+	right: -1.5rem;
+}
