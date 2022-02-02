@@ -4,6 +4,7 @@
 /* utilities */
 @import url(/src/styles/utilities.css);
 @import url(/src/styles/snippet_theme.css);
+@import url(/src/styles/prism.css);
 
 /* --------- component library ------------ */
 @import url(/src/components/typography/typography.css);

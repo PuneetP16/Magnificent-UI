@@ -9,13 +9,14 @@ body {
 		"header header"
 		"nav main";
 	transition: all 0.3s ease-in;
-	width:120rem;
+	max-width:120rem;
 	margin:auto;
 }
 
 @media only screen and (max-width: 720px) {
 	:root {
 		font-size: 65%;
+		--WIDTH-MAIN-CONTENT:100%;
 	}
 
 	body {
@@ -132,20 +133,33 @@ hr {
 
 /* paragraph */
 
+
+
 .m_doc-para {
+	gap:0.7rem;
 	margin-top: 0.3rem;
 }
 
-.m_doc_classes {
+.m_doc_class {
+	display:flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	gap:0.5rem;
+	margin: 1rem 0;
+	
+}
+
+.m_doc_class-item {
+	font-size: 1.5rem;
 	border: 0.5px solid var(--COLOR-PRIMARY);
 	background-color: var(--COLOR-DOC-CLASS);
-	border-radius: 10px;
-	padding: 0.65rem 1.2rem;
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
 	color: var(--COLOR-PRIMARY-DARK);
 	margin: auto 2px;
 	color: white;
 	font-weight: 500;
-	line-height: 4rem;
 }
 
 .lh4 {

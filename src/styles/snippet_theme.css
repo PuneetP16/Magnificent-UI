@@ -8,7 +8,6 @@
 	text-align: center;
 }
 
-
 .iframe_wrapper {
 	border-radius: 2rem;
 	overflow-x: auto;
@@ -17,4 +16,56 @@
 	padding-top: 1rem;
 	background: #2d2b55;
 	text-align: center;
+}
+
+.snippet_container {
+	border-radius: 2rem;
+	overflow-x: auto;
+	width: var(--WIDTH-MAIN-CONTENT);
+	margin: 3rem auto 4rem 0;
+	padding: 5px;
+	background: var(--COLOR-PRIMARY-DARKEST);
+	text-align: center;
+}
+
+.snippet_container {
+	font-size: 1.35rem;
+	line-height: 1rem;
+}
+
+.snippet_container .toolbar .toolbar-item .copy-to-clipboard-button {
+	color: black;
+	background: var(--COLOR-PRIMARY);
+	padding: 5px 10px;
+	margin-right: 5px;
+	font-weight: 600;
+}
+.snippet_container .toolbar .toolbar-item .copy-to-clipboard-button:hover {
+	cursor: pointer;
+	color: white;
+}
+.snippet_container .code-toolbar .toolbar {
+	opacity: 0.71;
+}
+
+.code_wrapper__code .token .url {
+    color: #a5ff90;
+}
+
+.snippet_container .token.attr-value{
+    color: #a5ff90;
+}
+
+.code-toolbar .code_wrapper__code {
+	color: var(--COLOR-SECONDARY);
+	background: none;
+}
+
+body > main > div:nth-child(3) > div > pre > code > span:nth-child(2) {
+	color:#a5ff90;
+}
+
+
+body > main > div:nth-child(3) > div > pre > code > span:nth-child(3) {
+	color:#a5ff90;
 }

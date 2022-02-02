@@ -1,0 +1,70 @@
+.alerts {
+    gap:0.8rem;
+}
+
+.alert {
+    cursor: default;
+    width:100%;     
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+}
+
+.alert:hover {
+    opacity: 0.8;
+}
+
+.alert--primary{
+    background-color: var(--COLOR-PRIMARY-DARKEST);
+}
+
+.alert--secondary{
+    background-color: var(--COLOR-SECONDARY-500);
+}
+
+.alert--info{
+    background-color: var(--COLOR-BLUE-500);
+}
+
+.alert--success{
+    background-color: var(--COLOR-GREEN-500);
+}
+
+.alert--danger{
+    background-color: var(--COLOR-AVATAR-STATUS-BUSY);
+}
+
+.alert--warning{
+    background-color: var(--COLOR-ORANGE-500);
+}
+
+.alert--dismissable{
+    background-color: var(--COLOR-ORANGE-500);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1.5rem;
+
+}
+
+.alert i {
+	font-size: 2.4rem;
+}
+
+
+.alert--btn__dismiss {
+    padding: 0;
+    margin-left: auto;
+    color:white;
+    opacity: 0.8;
+}
+
+.alert--btn__dismiss:hover {
+    opacity: 1;
+}
+
+.alert--dismissable:hover {
+    opacity: 1;
+}

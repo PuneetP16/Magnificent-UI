@@ -28,14 +28,16 @@
 			<h1 class="h4 nav_head">Components</h1>
 			<ul class="nav_items_list flex-col-align-center">
 				<li class="nav_items">
-					<a
-						class="nav_links nav_link-selected"
-						href="/src/components/avatar/avatar.html"
+					<a class="nav_links" href="/src/components/avatar/avatar.html"
 						>Avatar</a
 					>
 				</li>
 				<li class="nav_items">
-					<a class="nav_links" href="/src/components/badge/badge.html">Badge</a>
+					<a
+						class="nav_links nav_link-selected"
+						href="/src/components/badge/badge.html"
+						>Badge</a
+					>
 				</li>
 				<li class="nav_items">
 					<a class="nav_links" href="/src/components/alert/alert.html">Alert</a>
@@ -49,13 +51,13 @@
 					<a class="nav_links" href="/src/components/card/card.html">Card</a>
 				</li>
 				<li class="nav_items">
-					<a class="nav_links" href="/src/components/card/card.html">Input</a>
+					<a class="nav_links" href="/src/components/input/input.html">Input</a>
 				</li>
 				<li class="nav_items">
-					<a class="nav_links" href="/src/components/card/card.html">Form</a>
+					<a class="nav_links" href="/src/components/form/form.html">Form</a>
 				</li>
 				<li class="nav_items">
-					<a class="nav_links" href="/src/components/card/card.html"
+					<a class="nav_links" href="/src/components/snackbar/snackbar.html"
 						>Snackbar</a
 					>
 				</li>
@@ -87,10 +89,12 @@
 			<p class="m_doc-para">
 				The badge component has 2 positions each having sizes lg(large) and
 				sm(small) and three colors as follows:<br />
-				<span class="m_doc_classes">position-right-top-lg</span>
-				<span class="m_doc_classes">position-left-top-lg</span>
-				<span class="m_doc_classes">position-right-top-sm</span>
-				<span class="m_doc_classes">position-left-top-sm</span>
+				<span class="m_doc_class">
+					<span class="m_doc_class-item">position-right-top-lg</span>
+					<span class="m_doc_class-item">position-left-top-lg</span>
+					<span class="m_doc_class-item">position-right-top-sm</span>
+					<span class="m_doc_class-item">position-left-top-sm</span>
+				</span>
 			</p>
 
 			<!-- Badge variants component -->
@@ -142,7 +146,7 @@
 			<div class="component_display_container flex-center margin-top">
 				<div class="badges flex-col-align-center">
 					<span class="h4">Button with a large badge on the left</span>
-					<button class="button_primary badge_base color-primary-bg">
+					<button class="button--primary badge_base color-primary-bg">
 						Action
 						<span
 							class="badge color-secondary-bg w-h-lh-lg position-left-top-lg"
@@ -153,7 +157,7 @@
 					<span class="h5">Button toggles badge visibility</span>
 					<button
 						onclick="toggleBadgeVisibility()"
-						class="hide-btn badge_base button_primary"
+						class="hide-btn badge_base button--primary"
 					>
 						Hide
 						<span
@@ -170,7 +174,7 @@
 				<code class="iframe_code">
 					<iframe
 						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FIn%2520parent%2520tag%2520add%2520badge_base%2520class%2520and%2520in%2520child%2520tag%2520add%2520badge%2520class%2520with%2520color%252C%2520size%2520and%2520position%2520as%2520shown%2520below%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Cspan%2520class%253D%2522h4%2522%253EButton%2520with%2520a%2520large%2520badge%2520on%2520the%2520left%253C%252Fspan%253E%250A%253Cbutton%2520class%253D%2522button_primary%2520badge_base%2520color-primary-bg%2522%253E%250A%2509Action%250A%2509%253Cspan%2520class%253D%2522badge%2520color-secondary-bg%2520w-h-lh-lg%2520position-left-top-lg%2522%253E%250A%2509%25098%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%252F%252FAdd%2520onclick%2520for%2520toggle%2520visibility%250A%253Cspan%2520class%253D%2522h5%2522%253EButton%2520toggles%2520badge%2520visibility%253C%252Fspan%253E%250A%253Cbutton%2520onclick%253D%2522toggleBadgeVisibility%28%29%2522%2520class%253D%2522hide-btn%2520badge_base%2520button_primary%2522%253E%250A%2509Hide%250A%2509%253Cspan%2520id%253D%2522badgetoggle1%2522%2520class%253D%2522badge%2520color-primary-bg%2520w-h-lh-lg%2520position-right-top-lg%2522%253E%250A%2509%25097%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FIn%2520parent%2520tag%2520add%2520badge_base%2520class%2520and%2520in%2520child%2520tag%2520add%2520badge%2520class%2520with%2520color%252C%2520size%2520and%2520position%2520as%2520shown%2520below%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Cspan%2520class%253D%2522h4%2522%253EButton%2520with%2520a%2520large%2520badge%2520on%2520the%2520left%253C%252Fspan%253E%250A%253Cbutton%2520class%253D%2522button--primary%2520badge_base%2520color-primary-bg%2522%253E%250A%2509Action%250A%2509%253Cspan%2520class%253D%2522badge%2520color-secondary-bg%2520w-h-lh-lg%2520position-left-top-lg%2522%253E%250A%2509%25098%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%252F%252FAdd%2520onclick%2520for%2520toggle%2520visibility%250A%253Cspan%2520class%253D%2522h5%2522%253EButton%2520toggles%2520badge%2520visibility%253C%252Fspan%253E%250A%253Cbutton%2520onclick%253D%2522toggleBadgeVisibility%28%29%2522%2520class%253D%2522hide-btn%2520badge_base%2520button--primary%2522%253E%250A%2509Hide%250A%2509%253Cspan%2520id%253D%2522badgetoggle1%2522%2520class%253D%2522badge%2520color-primary-bg%2520w-h-lh-lg%2520position-right-top-lg%2522%253E%250A%2509%25097%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
 						style="width: 813px; height: 446px; border: 0; transform: scale(1)"
 						sandbox="allow-scripts allow-same-origin"
 					>

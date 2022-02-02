@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+		<title>Alert</title>
+	</head>
+
+	<body>
+		<header class="header flex-align-left">
+			<div class="logo_text grid-center">Magnificent UI</div>
+		</header>
+		<nav class="nav flex-col-align-center">
+			<h1 class="h4 nav_head">Get Started</h1>
+			<ul class="nav_items_list flex-col-align-center">
+				<li class="nav_items">
+					<a class="nav_links" href="#">Installation</a>
+				</li>
+				<li class="nav_items"><a class="nav_links" href="#">Colors</a></li>
+				<li class="nav_items"><a class="nav_links" href="#">Typography</a></li>
+			</ul>
+			<h1 class="h4 nav_head">Components</h1>
+			<ul class="nav_items_list flex-col-align-center">
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/avatar/avatar.html"
+						>Avatar</a
+					>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/badge/badge.html">Badge</a>
+				</li>
+				<li class="nav_items">
+					<a
+						class="nav_links nav_link-selected"
+						href="/src/components/alert/alert.html"
+						>Alert</a
+					>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/button/button.html"
+						>Button</a
+					>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/card/card.html">Card</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/input/input.html">Input</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/form/form.html">Form</a>
+				</li>
+				<li class="nav_items">
+					<a class="nav_links" href="/src/components/snackbar/snackbar.html"
+						>Snackbar</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<main class="main">
+			<!-- ----ALERT----- -->
+
+			<h2 class="h2 m_doc-heading">Alert</h2>
+			<p class="m_doc-para">
+				An alert displays a short, important message in a way that attracts the
+				user's attention without interrupting the user's task.
+			</p>
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<iframe
+					class="iframe"
+					src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Falert%252Falert.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Falert%252Falert.css%2522%253E"
+					style="width: 813px; height: 186px; border: 0; transform: scale(1)"
+					sandbox="allow-scripts allow-same-origin"
+				>
+				</iframe>
+			</div>
+
+			<!-- Standard avatar component -->
+			<h3>Standard Alerts</h3>
+
+			<p class="m_doc-para">
+				Simple Alerts can be created using 'alert' class, followed by the
+				variant name as follows.
+				<br />
+				<span class="m_doc_class">
+					<span class="m_doc_class-item">alert</span>
+					<span class="m_doc_class-item">alert--primary</span>
+					<span class="m_doc_class-item">alert--secondary</span>
+					<span class="m_doc_class-item">alert--info</span>
+					<span class="m_doc_class-item">alert--success</span>
+					<span class="m_doc_class-item">alert--danger</span>
+					<span class="m_doc_class-item">alert--warning</span>
+					<span class="m_doc_class-item">alert--dismissable</span>
+				</span>
+			</p>
+
+			<!-- component display container -->
+			<div class="component_display_container flex-center margin-top">
+
+				<div class="alerts flex-col-align-center fw">
+
+					<div class="alert alert--primary">
+						Primary! This is a primary alert—check it out!
+					</div>
+					<div class="alert alert--secondary">
+						Secondary! This is a secondary alert—check it out!
+					</div>
+					<div class="alert alert--info">
+						Info! This is a info alert—check it out!
+					</div>
+					<div class="alert alert--success">
+						Success! This is a success alert—check it out!
+					</div>
+					<div class="alert alert--danger">
+						Danger! This is a danger alert—check it out!
+					</div>
+					<div class="alert alert--warning">
+						Warning! This is a warning alert—check it out!
+					</div>
+					
+				</div>
+			</div>
+
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<iframe
+					src="https://carbon.now.sh/embed/3uAWNbWAoh2whCzbKv1u"
+					style="width: 100%; height: 405px; border: 0; transform: scale(1)"
+					sandbox="allow-scripts allow-same-origin"
+				>
+				</iframe>
+			</div>
+
+			<!-- Dismissible Alert component -->
+			<h3>Dissmissable Alerts</h3>
+
+			<p class="m_doc-para">
+				Dissmissable Alerts can be created by adding following to standard
+				Alerts.
+				<span class="m_doc_class">
+					<span class="m_doc_class-item">alert--dismissable</span>
+					<span class="m_doc_class-item">alert--btn__dismiss</span>
+				</span>
+			</p>
+
+			<!-- component display container -->
+			<div class="component_display_container flex-center margin-top">
+				<div class="alerts flex-col-align-center fw">
+					<div id="alert--warning--dismiss" class="alert alert--dismissable">
+						This is a dismissable warning alert! (add width:fit-content to
+						reduce the size of the alert)
+						<button
+							id="alert--warning--dismiss-btn"
+							class="btn btn--icon btn--close alert--btn__dismiss btn--circular"
+						>
+							<i class="bx bx-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- code snippet container -->
+			<div class="iframe_wrapper">
+				<iframe
+					src="https://carbon.now.sh/embed/Z84HvFzzG0x9Tm6cSnfh"
+					style="
+						width: 817px;
+						height: 260px;
+						border: 0;
+						transform: scale(1);
+						overflow: hidden;
+					"
+					sandbox="allow-scripts allow-same-origin"
+				>
+				</iframe>
+			</div>
+
+			<p class="note_size">
+				<span><b>Note: </b></span><span>Used 10px as root font size.</span>
+			</p>
+		</main>
+		<script src="/src/components/alert/alert.js"></script>
+	</body>
+</html>
