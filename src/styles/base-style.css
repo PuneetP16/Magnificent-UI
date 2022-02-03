@@ -12,6 +12,7 @@
 }
 
 :root {
+	--COLOR-DEFAULT:white;
 	--COLOR-BG: lavender;
 
 	--COLOR-PRIMARY-LIGHT: #e9d5ff;
@@ -57,6 +58,10 @@
 	/* Main Content */
 	--WIDTH-MAIN-CONTENT: 90%;
 	--COLOR-DOC-CLASS: #411467;
+
+	/* SNIPPET THEME */
+	--COLOR-SNIPPET-COMMENTS:#d8bdf3;
+	--COLOR-IMPORT:#fef9c3;
 }
 
 /* Remove default margin */
