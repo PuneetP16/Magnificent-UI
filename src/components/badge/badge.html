@@ -74,16 +74,18 @@
 				characters, that appears in proximity to another object.
 			</p>
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Fbadge%252Fbadge.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Fbadge%252Fbadge.css%2522%253E"
-						style="width: 813px; height: 186px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// CSS
+					@import url("https://magnificentui.netlify.app/src/components/badge/badge.css");
+
+					// HTML
+					<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/badge/badge.css">
+				</script>
 			</div>
 
 			<p class="m_doc-para">
@@ -128,16 +130,38 @@
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FIn%2520parent%2520tag%2520add%2520badge_base%2520class%2520and%2520in%2520child%2520tag%2520add%2520badge%2520class%2520with%2520color%252C%2520size%2520and%2520position%2520as%2520shown%2520below%250A%250A%252F%252Flarge%2520badge%250A%253Cspan%2520class%253D%2522badge_base%2520h2%2522%253E%250A%2509%252F%252FText%2520Goes%2520Here%250A%2509%253Cspan%2520class%253D%2522badge%2520color-primary-bg%2520w-h-lh-lg%2520position-right-top-lg%2522%253E%2509%250A%2509%25091%250A%2509%253C%252Fspan%253E%250A%253C%252Fspan%253E%250A%250A%252F%252Fsmall%2520badge%250A%253Cspan%2520class%253D%2522badge_base%2520h3%2522%253E%250A%2509%252F%252FText%2520Goes%2520Here%250A%2509%253Cspan%2520class%253D%2522badge%2520color-tertiary-bg%2520w-h-lh-sm%2520position-right-top-sm%2522%253E%250A%2509%25091%250A%2509%253C%252Fspan%253E%250A%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badge_base%2520h3%2522%253E%250A%2509Text%2520with%2520large%2520badge%250A%2509%253Cspan%2520class%253D%2522badge%2520color-primary-bg%2520w-h-lh-lg%2520position-right-top-lg%2522%253E%250A%25099%252B%250A%2509%253C%252Fspan%253E%250A%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-						style="width: 813px; height: 556px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					//In parent tag add badge_base class and in child tag add badge class
+					//  with color, size and position as shown below
+
+					//large badge
+					<span class="badge_base h2">
+						//Text Goes Here
+						<span class="badge color-primary-bg w-h-lh-lg position-right-top-lg">
+							1
+						</span>
+					</span>
+
+					//small badge
+					<span class="badge_base h3">
+						//Text Goes Here
+						<span class="badge color-tertiary-bg w-h-lh-sm position-right-top-sm">
+							1
+						</span>
+					</span>
+
+					<span class="badge_base h3">
+						Text with large badge
+						<span class="badge color-primary-bg w-h-lh-lg position-right-top-lg">
+						9+
+						</span>
+					</span>
+				</script>
 			</div>
 
 			<h3 class="mt1p5">Badge with Button</h3>
@@ -146,7 +170,15 @@
 			<div class="component_display_container flex-center margin-top">
 				<div class="badges flex-col-align-center">
 					<span class="h4">Button with a large badge on the left</span>
-					<button class="button--primary badge_base color-primary-bg">
+					<!-- <button class="button--primary badge_base color-primary-bg">
+						Action
+						<span
+							class="badge color-secondary-bg w-h-lh-lg position-left-top-lg"
+							>8</span
+						>
+					</button> -->
+
+					<button class="btn btn--primary-light bx--shadow badge_base">
 						Action
 						<span
 							class="badge color-secondary-bg w-h-lh-lg position-left-top-lg"
@@ -157,7 +189,7 @@
 					<span class="h5">Button toggles badge visibility</span>
 					<button
 						onclick="toggleBadgeVisibility()"
-						class="hide-btn badge_base button--primary"
+						class=" btn bx--shadow transparent--black badge_base"
 					>
 						Hide
 						<span
@@ -170,16 +202,29 @@
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FIn%2520parent%2520tag%2520add%2520badge_base%2520class%2520and%2520in%2520child%2520tag%2520add%2520badge%2520class%2520with%2520color%252C%2520size%2520and%2520position%2520as%2520shown%2520below%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Cspan%2520class%253D%2522h4%2522%253EButton%2520with%2520a%2520large%2520badge%2520on%2520the%2520left%253C%252Fspan%253E%250A%253Cbutton%2520class%253D%2522button--primary%2520badge_base%2520color-primary-bg%2522%253E%250A%2509Action%250A%2509%253Cspan%2520class%253D%2522badge%2520color-secondary-bg%2520w-h-lh-lg%2520position-left-top-lg%2522%253E%250A%2509%25098%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%252F%252FAdd%2520onclick%2520for%2520toggle%2520visibility%250A%253Cspan%2520class%253D%2522h5%2522%253EButton%2520toggles%2520badge%2520visibility%253C%252Fspan%253E%250A%253Cbutton%2520onclick%253D%2522toggleBadgeVisibility%28%29%2522%2520class%253D%2522hide-btn%2520badge_base%2520button--primary%2522%253E%250A%2509Hide%250A%2509%253Cspan%2520id%253D%2522badgetoggle1%2522%2520class%253D%2522badge%2520color-primary-bg%2520w-h-lh-lg%2520position-right-top-lg%2522%253E%250A%2509%25097%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
-						style="width: 813px; height: 446px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					<span class="h4">Button with a large badge on the left</span>
+					<button class="button--primary badge_base color-primary-bg">
+						Action
+						<span class="badge color-secondary-bg w-h-lh-lg position-left-top-lg">
+							8
+						</span>
+					</button>
+
+					//Add onclick for toggle visibility
+					<span class="h5">Button toggles badge visibility</span>
+					<button onclick="toggleBadgeVisibility()" class="hide-btn badge_base button--primary">
+						Hide
+						<span id="badgetoggle1" class="badge color-primary-bg w-h-lh-lg position-right-top-lg">
+							7
+						</span>
+					</button>
+				</script>
 			</div>
 
 			<h3 class="mt1p5">Badge with Icon</h3>
@@ -213,16 +258,17 @@
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cicon%2520class%253D%2522badge_base%2522%253E%250A%2520%2520%2520%2520%253Csvg%2520...%253E%253C%252Fsvg%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520color-tertiary-bg%2520w-h-lh-lg%2520icon_badge%2522%253E15%252B%253C%252Fspan%253E%250A%253C%252Ficon%253E"
-						style="width: 813px; height: 156px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					<icon class="badge_base">
+						<svg ...></svg>
+						<span class="badge color-tertiary-bg w-h-lh-lg icon_badge">15+</span>
+					</icon>
+				</script>
 			</div>
 
 			<p class="note_size">
@@ -230,5 +276,6 @@
 			</p>
 		</main>
 		<script src="/src/components/badge/badge.js"></script>
+		<script src="/src/javascript/prism.js"></script>
 	</body>
 </html>

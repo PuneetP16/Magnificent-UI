@@ -72,17 +72,21 @@
 				user's attention without interrupting the user's task.
 			</p>
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<iframe
-					class="iframe"
-					src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Falert%252Falert.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Falert%252Falert.css%2522%253E"
-					style="width: 813px; height: 186px; border: 0; transform: scale(1)"
-					sandbox="allow-scripts allow-same-origin"
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
 				>
-				</iframe>
+					// CSS
+					@import url("https://magnificentui.netlify.app/src/components/alert/alert.css");
+
+					// HTML
+					<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/alert/alert.css">
+				</script>
 			</div>
 
-			<!-- Standard avatar component -->
+			<!-- Standard alert component -->
 			<h3>Standard Alerts</h3>
 
 			<p class="m_doc-para">
@@ -103,9 +107,7 @@
 
 			<!-- component display container -->
 			<div class="component_display_container flex-center margin-top">
-
 				<div class="alerts flex-col-align-center fw">
-
 					<div class="alert alert--primary">
 						Primary! This is a primary alert—check it out!
 					</div>
@@ -124,19 +126,38 @@
 					<div class="alert alert--warning">
 						Warning! This is a warning alert—check it out!
 					</div>
-					
 				</div>
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<iframe
-					src="https://carbon.now.sh/embed/3uAWNbWAoh2whCzbKv1u"
-					style="width: 100%; height: 405px; border: 0; transform: scale(1)"
-					sandbox="allow-scripts allow-same-origin"
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
 				>
-				</iframe>
+				<div class="alert alert--primary">
+					//Your Alert text goes here..
+				  </div>
+				  <div class="alert alert--secondary">
+					//Your Alert text goes here..
+				  </div>
+				  <div class="alert alert--info">
+					//Your Alert text goes here..
+				  </div>
+				  <div class="alert alert--success">
+					//Your Alert text goes here..
+				  </div>
+				  <div class="alert alert--danger">
+					//Your Alert text goes here..
+				  </div>
+				  <div class="alert alert--warning">
+					//Your Alert text goes here..
+				  </div>
+				  
+				</script>
 			</div>
+
 
 			<!-- Dismissible Alert component -->
 			<h3>Dissmissable Alerts</h3>
@@ -158,7 +179,7 @@
 						reduce the size of the alert)
 						<button
 							id="alert--warning--dismiss-btn"
-							class="btn btn--icon btn--close alert--btn__dismiss btn--circular"
+							class="btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
 						>
 							<i class="bx bx-x"></i>
 						</button>
@@ -166,20 +187,24 @@
 				</div>
 			</div>
 
-			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<iframe
-					src="https://carbon.now.sh/embed/Z84HvFzzG0x9Tm6cSnfh"
-					style="
-						width: 817px;
-						height: 260px;
-						border: 0;
-						transform: scale(1);
-						overflow: hidden;
-					"
-					sandbox="allow-scripts allow-same-origin"
+			<!--  snippet container -->
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
 				>
-				</iframe>
+				//Dismiss Alert
+				<div id="alert--warning--dismiss" class="alert alert--dismissable">
+				  <i class='bx bx-bug' ></i>
+				  //Your Alert text goes here..
+				  <button id="alert--warning--dismiss-btn" class="btn--icon alert--btn__dismiss">
+					<i class='bx bx-x'>
+					</i>
+				  </button>
+				</div>
+				
+				  
+				</script>
 			</div>
 
 			<p class="note_size">
@@ -187,5 +212,6 @@
 			</p>
 		</main>
 		<script src="/src/components/alert/alert.js"></script>
+		<script src="/src/javascript/prism.js"></script>
 	</body>
 </html>

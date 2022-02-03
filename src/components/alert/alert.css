@@ -1,70 +1,68 @@
 .alerts {
-    gap:0.8rem;
+	gap: 0.8rem;
 }
 
 .alert {
-    cursor: default;
-    width:100%;     
-    padding: 1.2rem 1.5rem;
-    border-radius: 1rem;
-    color: white;
-    text-align: left;
-    font-weight: 500;
+	border-radius: 1rem;
+	color: rgb(255, 255, 255);
+	cursor: default;
+	font-weight: 500;
+	padding: 1.2rem 1.5rem;
+	text-align: left;
+	width: 100%;
 }
 
 .alert:hover {
-    opacity: 0.8;
+	opacity: 0.95;
 }
 
-.alert--primary{
-    background-color: var(--COLOR-PRIMARY-DARKEST);
+.alert--primary {
+	background-color: var(--COLOR-PRIMARY-DARKEST);
 }
 
-.alert--secondary{
-    background-color: var(--COLOR-SECONDARY-500);
+.alert--secondary {
+	background-color: var(--COLOR-SECONDARY-DARKEST);
 }
 
-.alert--info{
-    background-color: var(--COLOR-BLUE-500);
+.alert--info {
+	background-color: var(--COLOR-BLUE);
 }
 
-.alert--success{
-    background-color: var(--COLOR-GREEN-500);
+.alert--success {
+	background-color: var(--COLOR-GREEN);
 }
 
-.alert--danger{
-    background-color: var(--COLOR-AVATAR-STATUS-BUSY);
+.alert--danger {
+	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
 }
 
-.alert--warning{
-    background-color: var(--COLOR-ORANGE-500);
+.alert--warning {
+	background-color: var(--COLOR-ORANGE);
 }
 
-.alert--dismissable{
-    background-color: var(--COLOR-ORANGE-500);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.7rem 1.5rem;
-
+.alert--dismissable {
+	align-items: center;
+	background-color: var(--COLOR-ORANGE);
+	display: flex;
+	gap: 1rem;
+	padding: 0.7rem 1.5rem;
 }
 
 .alert i {
 	font-size: 2.4rem;
 }
 
-
 .alert--btn__dismiss {
-    padding: 0;
-    margin-left: auto;
-    color:white;
-    opacity: 0.8;
+	padding: 0;
+	margin-left: auto;
+	color: white;
+	opacity: 0.8;
 }
 
 .alert--btn__dismiss:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .alert--dismissable:hover {
-    opacity: 1;
+	opacity: 1;
 }

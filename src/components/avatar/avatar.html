@@ -70,22 +70,23 @@
 				page, on navigation bar and in blogs grid items.
 			</p>
 
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Favatar%252Favatar.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmagnificentui.netlify.app%252Fsrc%252Fcomponents%252Favatar%252Favatar.css%2522%253E"
-						style="width: 813px; height: 186px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+			<!-- SNIPPET CONTAINER -->
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// CSS
+					@import url("https://magnificentui.netlify.app/src/components/avatar/avatar.css");
+
+					// HTML
+					<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/avatar/avatar.css">
+				</script>
 			</div>
 
 			<!-- Standard avatar component -->
 			<h3>Standard Round Avatars</h3>
-
-			<!-- code snippet container -->
 
 			<p class="m_doc-para">
 				The avatar component has 4 sizes
@@ -117,16 +118,22 @@
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--md%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%253C%252Fdiv%253E%250A"
-						style="width: 813px; height: 256px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					//large-size
+					<div class="avatar avatar--lg">
+						<img src="..." alt="...">
+					</div>
+
+					//Medium-size
+					<div class="avatar avatar--md">
+						<img src="..." alt="...">
+					</div>
+				</script>
 			</div>
 
 			<!--  avatar with status component -->
@@ -170,16 +177,24 @@
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%2520with%2520avatar%2520status%2520online%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar__status%2520avatar__status--online%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%2520with%2520avatar%2520status%2520offline%250A%253Cdiv%2520class%253D%2522avatar%2520avatar--md%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar__status%2520avatar__status--offline%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-						style="width: 813px; height: 296px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					//large-size with avatar status online
+					<div class="avatar avatar--lg">
+						<img src="..." alt="...">
+						<div class="avatar__status avatar__status--online"></div>
+					</div>
+
+					//Medium-size with avatar status offline
+					<div class="avatar avatar--md">
+						<img src="..." alt="...">
+						<div class="avatar__status avatar__status--offline"></div>
+					</div>
+				</script>
 			</div>
 
 			<!-- AVATAR WITH TEXT component -->
@@ -213,21 +228,24 @@
 			</div>
 
 			<!-- code snippet container -->
-			<div class="iframe_wrapper">
-				<code class="iframe_code">
-					<iframe
-						class="iframe"
-						src="https://carbon.now.sh/embed?bg=rgba%2845%2C43%2C85%2C1%29&t=shades-of-purple&wt=none&l=css&width=812.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Flarge-size%2520avatar%2520text%250A%253Cdiv%2520class%253D%2522avatar%2520avatar__text%2520avatar--lg%2520avatar__text--lg%2522%253Etext%253C%252Fdiv%253E%250A%250A%252F%252FMedium-size%2520avatar%2520text%250A%253Cdiv%2520class%253D%2522avatar%2520avatar__text%2520avatar--md%2520avatar__text--md%2522%253Etext%253C%252Fdiv%253E%250A"
-						style="width: 813px; height: 186px; border: 0; transform: scale(1)"
-						sandbox="allow-scripts allow-same-origin"
-					>
-					</iframe>
-				</code>
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					//large-size avatar text
+					<div class="avatar avatar__text avatar--lg avatar__text--lg">text</div>
+
+					//Medium-size avatar text
+					<div class="avatar avatar__text avatar--md avatar__text--md">text</div>
+				</script>
 			</div>
 
 			<p class="note_size">
 				<span><b>Note: </b></span><span>Used 10px as root font size.</span>
 			</p>
 		</main>
+		<script src="/src/javascript/prism.js"></script>
 	</body>
 </html>
