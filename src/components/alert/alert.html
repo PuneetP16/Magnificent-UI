@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+		<title>Alert</title>
+	</head>
+
+	<body>
+		<header class="header flex">
+			<div class="brand__text grid-center">Magnificent UI</div>
+		</header>
+		<nav class="nav flex-col-align-center">
+			<h1 class="h4 nav__head">Get Started</h1>
+			<ul class="nav__items flex-col-align-center">
+				<li class="nav__list">
+					<a class="nav__links" href="#">Installation</a>
+				</li>
+				<li class="nav__list"><a class="nav__links" href="#">Colors</a></li>
+				<li class="nav__list"><a class="nav__links" href="#">Typography</a></li>
+			</ul>
+			<h1 class="h4 nav__head">Components</h1>
+			<ul class="nav__items flex-col-align-center">
+				<li class="nav__list">
+					<a
+						class="nav__links"
+						href="/src/components/avatar/avatar.html"
+						>Avatar</a
+					>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/badge/badge.html"
+						>Badge</a
+					>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links nav_link--selected" href="/src/components/alert/alert.html"
+						>Alert</a
+					>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/button/button.html"
+						>Button</a
+					>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/card/card.html">Card</a>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/input/input.html"
+						>Input</a
+					>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/form/form.html">Form</a>
+				</li>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/snackbar/snackbar.html"
+						>Snackbar</a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Main Start -->
+
+		<main class="main">
+			<!-- ----ALERT----- -->
+
+			<h2 class="h2 m_doc__heading">Alert</h2>
+			<p class="m_doc__para">
+				An alert displays a short, important message in a way that attracts the
+				user's attention without interrupting the user's task.
+			</p>
+			<!-- code snippet container -->
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// CSS
+					@import url("https://magnificentui.netlify.app/src/components/alert/alert.css");
+
+					// HTML
+					<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/alert/alert.css">
+				</script>
+			</div>
+
+			<!-- Standard alert component -->
+			<h3>Standard Alerts</h3>
+
+			<p class="m_doc__para">
+				Simple Alerts can be created using 'alert' class, followed by the
+				variant name as follows.
+				<br />
+				<span class="m_doc_class">
+					<span class="m_doc_class__item">alert</span>
+					<span class="m_doc_class__item">alert--primary</span>
+					<span class="m_doc_class__item">alert--secondary</span>
+					<span class="m_doc_class__item">alert--info</span>
+					<span class="m_doc_class__item">alert--success</span>
+					<span class="m_doc_class__item">alert--danger</span>
+					<span class="m_doc_class__item">alert--warning</span>
+					<span class="m_doc_class__item">alert--dismissable</span>
+				</span>
+			</p>
+
+			<!-- component display container -->
+			<div class="comp_container flex-center margin-top">
+				<div class="alerts flex-col-align-center fw">
+					<div class="alert alert--primary">
+						Primary! This is a primary alert—check it out!
+					</div>
+					<div class="alert alert--secondary">
+						Secondary! This is a secondary alert—check it out!
+					</div>
+					<div class="alert alert--info">
+						Info! This is a info alert—check it out!
+					</div>
+					<div class="alert alert--success">
+						Success! This is a success alert—check it out!
+					</div>
+					<div class="alert alert--danger">
+						Danger! This is a danger alert—check it out!
+					</div>
+					<div class="alert alert--warning">
+						Warning! This is a warning alert—check it out!
+					</div>
+				</div>
+			</div>
+
+			<!-- code snippet container -->
+
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					<div class="alert alert--primary">
+						//Your Alert text goes here..
+					  </div>
+					  <div class="alert alert--secondary">
+						//Your Alert text goes here..
+					  </div>
+					  <div class="alert alert--info">
+						//Your Alert text goes here..
+					  </div>
+					  <div class="alert alert--success">
+						//Your Alert text goes here..
+					  </div>
+					  <div class="alert alert--danger">
+						//Your Alert text goes here..
+					  </div>
+					  <div class="alert alert--warning">
+						//Your Alert text goes here..
+					  </div>
+				</script>
+			</div>
+
+			<!-- Dismissible Alert component -->
+			<h3>Dissmissable Alerts</h3>
+
+			<p class="m_doc__para">
+				Dissmissable Alerts can be created by adding following to standard
+				Alerts.
+				<span class="m_doc_class">
+					<span class="m_doc_class__item">alert--dismissable</span>
+					<span class="m_doc_class__item">alert--btn__dismiss</span>
+				</span>
+			</p>
+
+			<!-- component display container -->
+			<div class="comp_container flex-center margin-top">
+				<div class="alerts flex-col-align-center fw">
+					<div id="alert--warning--dismiss" class="alert alert--dismissable">
+						This is a dismissable warning alert! (add width:fit-content to
+						reduce the size of the alert)
+						<button
+							id="alert--warning--dismiss-btn"
+							class="btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+						>
+							<i class="bx bx-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!--  snippet container -->
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					//Dismiss Alert
+					<div id="alert--warning--dismiss" class="alert alert--dismissable">
+					  <i class='bx bx-bug' ></i>
+					  //Your Alert text goes here..
+					  <button id="alert--warning--dismiss-btn" class="btn--icon alert--btn__dismiss">
+						<i class='bx bx-x'>
+						</i>
+					  </button>
+					</div>
+				</script>
+			</div>
+
+			<p class="units_instruction">
+				<span><b>Note: </b></span><span>Used 10px as root font size.</span>
+			</p>
+		</main>
+		<script src="/src/components/alert/alert.js"></script>
+		<script src="/src/javascript/prism.js"></script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+.alerts {
+	gap: 8px;
+}
+
+.alert {
+	border-radius: 1rem;
+	color: var(--COLOR-WHITE);
+	cursor: default;
+	font-weight: 500;
+	padding: 1.2rem 1.5rem;
+	text-align: left;
+	width: 100%;
+}
+
+.alert:hover {
+	opacity: 0.95;
+}
+
+.alert--primary {
+	background-color: var(--COLOR-PRIMARY-DARKEST);
+}
+
+.alert--secondary {
+	background-color: var(--COLOR-SECONDARY-DARKEST);
+}
+
+.alert--info {
+	background-color: var(--COLOR-BLUE);
+}
+
+.alert--success {
+	background-color: var(--COLOR-GREEN);
+}
+
+.alert--danger {
+	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
+}
+
+.alert--warning {
+	background-color: var(--COLOR-ORANGE);
+}
+
+.alert--dismissable {
+	align-items: center;
+	background-color: var(--COLOR-ORANGE);
+	display: flex;
+	gap: 1rem;
+	padding: 0.7rem 1.5rem;
+}
+
+.alert i {
+	font-size: 2.4rem;
+}
+
+.alert--btn__dismiss {
+	padding: 0;
+	margin-left: auto;
+	color: var(--COLOR-WHITE);
+
+	opacity: 0.8;
+}
+
+.alert--btn__dismiss:hover {
+	opacity: 1;
+}
+
+.alert--dismissable:hover {
+	opacity: 1;
+}

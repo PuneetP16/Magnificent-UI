@@ -1,20 +1,68 @@
-.iframe_wrapper_main {
+.snippet_container {
 	border-radius: 2rem;
 	overflow-x: auto;
 	width: var(--WIDTH-MAIN-CONTENT);
 	margin: 3rem auto 4rem 0;
-	padding-top: 1rem;
-	background: #2d2b55;
+	padding: 5px;
+	background: var(--COLOR-PRIMARY-DARKEST);
 	text-align: center;
 }
 
+/* for container */
 
-.iframe_wrapper {
-	border-radius: 2rem;
-	overflow-x: auto;
-	width: var(--WIDTH-MAIN-CONTENT);
-	margin: 3rem auto 4rem 0;
-	padding-top: 1rem;
-	background: #2d2b55;
-	text-align: center;
+.snippet_container .snippet_container__script {
+	border-radius: 1rem;
+	font-size: 1.35rem;
+}
+
+.snippet_container .snippet_container__script {
+	color: var(--COLOR-SNIPPET-COMMENTS);
+	background: var(--COLOR-PRIMARY-DARKEST);
+}
+
+/* for strings */
+.snippet_container .code-toolbar .snippet_container__script .string {
+	color: var(--COLOR-SECONDARY);
+}
+
+/* for braces */
+.snippet_container__script
+	.snippet_container__script
+	.atrule
+	.url
+	.punctuation {
+	color: var(--COLOR-WHITE);
+}
+
+/* for import */
+.snippet_container .code-toolbar .snippet_container__script .atrule .rule {
+	color: var(--COLOR-IMPORT);
+}
+
+/* ------------Button------------- */
+
+.snippet_container .code-toolbar .toolbar {
+	opacity: 0.6;
+}
+
+.snippet_container
+	.code-toolbar
+	.toolbar
+	.toolbar-item
+	.copy-to-clipboard-button {
+	font-size: 1.4rem;
+	color: var(--COLOR-PRIMARY-DARKEST);
+	font-weight: 600;
+	height: 2.5rem;
+	border-radius: 10%;
+	background: var(--COLOR-SECONDARY);
+	margin: 0.3rem 8px;
+}
+
+.snippet_container
+	.code-toolbar
+	.toolbar
+	.toolbar-item
+	.copy-to-clipboard-button:hover {
+	transform: scale(1.02);
 }
