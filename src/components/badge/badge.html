@@ -13,62 +13,69 @@
 	</head>
 
 	<body>
-		<header class="header flex-align-left">
-			<div class="logo_text grid-center">Magnificent UI</div>
+		<header class="header flex">
+			<div class="brand__text grid-center">Magnificent UI</div>
 		</header>
 		<nav class="nav flex-col-align-center">
-			<h1 class="h4 nav_head">Get Started</h1>
-			<ul class="nav_items_list flex-col-align-center">
-				<li class="nav_items">
-					<a class="nav_links" href="#">Installation</a>
+			<h1 class="h4 nav__head">Get Started</h1>
+			<ul class="nav__items flex-col-align-center">
+				<li class="nav__list">
+					<a class="nav__links" href="#">Installation</a>
 				</li>
-				<li class="nav_items"><a class="nav_links" href="#">Colors</a></li>
-				<li class="nav_items"><a class="nav_links" href="#">Typography</a></li>
+				<li class="nav__list"><a class="nav__links" href="#">Colors</a></li>
+				<li class="nav__list"><a class="nav__links" href="#">Typography</a></li>
 			</ul>
-			<h1 class="h4 nav_head">Components</h1>
-			<ul class="nav_items_list flex-col-align-center">
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/avatar/avatar.html"
+			<h1 class="h4 nav__head">Components</h1>
+			<ul class="nav__items flex-col-align-center">
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/avatar/avatar.html"
 						>Avatar</a
 					>
 				</li>
-				<li class="nav_items">
+				<li class="nav__list">
 					<a
-						class="nav_links nav_link-selected"
+						class="nav__links nav_link--selected"
 						href="/src/components/badge/badge.html"
 						>Badge</a
 					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/alert/alert.html">Alert</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/alert/alert.html"
+						>Alert</a
+					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/button/button.html"
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/button/button.html"
 						>Button</a
 					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/card/card.html">Card</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/card/card.html">Card</a>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/input/input.html">Input</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/input/input.html"
+						>Input</a
+					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/form/form.html">Form</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/form/form.html">Form</a>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/snackbar/snackbar.html"
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/snackbar/snackbar.html"
 						>Snackbar</a
 					>
 				</li>
 			</ul>
 		</nav>
+
+		<!-- Main Start -->
+
 		<main class="main">
 			<!-- ----Badge----- -->
 
-			<h2 class="h2 m_doc-heading">Badge</h2>
+			<h2 class="h2 m_doc__heading">Badge</h2>
 
-			<p class="m_doc-para">
+			<p class="m_doc__para">
 				Badges are small status descriptors for UI elements. A badge consists of
 				a small circle, typically containing a number or other short set of
 				characters, that appears in proximity to another object.
@@ -88,14 +95,14 @@
 				</script>
 			</div>
 
-			<p class="m_doc-para">
+			<p class="m_doc__para">
 				The badge component has 2 positions each having sizes lg(large) and
 				sm(small) and three colors as follows:<br />
 				<span class="m_doc_class">
-					<span class="m_doc_class-item">position-right-top-lg</span>
-					<span class="m_doc_class-item">position-left-top-lg</span>
-					<span class="m_doc_class-item">position-right-top-sm</span>
-					<span class="m_doc_class-item">position-left-top-sm</span>
+					<span class="m_doc_class__item">pos-right-top-lg</span>
+					<span class="m_doc_class__item">pos-left-top-lg</span>
+					<span class="m_doc_class__item">pos-right-top-sm</span>
+					<span class="m_doc_class__item">pos-left-top-sm</span>
 				</span>
 			</p>
 
@@ -103,11 +110,12 @@
 			<h3 class="mt1p5">Badge with Text</h3>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="badges flex-col-align-center">
 					<span class="badge_base h2"
 						>Text with a large badge
-						<span class="badge color-primary-bg w-h-lh-lg position-right-top-lg"
+						<span
+							class="badge color-primary-bg width_height-lg pos-right-top-lg"
 							>1</span
 						>
 					</span>
@@ -115,14 +123,15 @@
 					<span class="badge_base h3"
 						>Text with a small badge
 						<span
-							class="badge color-tertiary-bg w-h-lh-sm position-right-top-sm"
+							class="badge color-tertiary-bg width_height-sm pos-right-top-sm"
 							>1</span
 						>
 					</span>
 
 					<span class="badge_base h3"
 						>Text with large badge
-						<span class="badge color-primary-bg w-h-lh-lg position-right-top-lg"
+						<span
+							class="badge color-primary-bg width_height-lg pos-right-top-lg"
 							>9+</span
 						>
 					</span>
@@ -136,52 +145,48 @@
 					type="text/plain"
 					class="line-numbers language-css snippet_container__script"
 				>
-					//In parent tag add badge_base class and in child tag add badge class
-					//  with color, size and position as shown below
+										//In parent tag add badge_base class and in child tag add badge class
+										//  with color, size and position as shown below
 
-					//large badge
-					<span class="badge_base h2">
-						//Text Goes Here
-						<span class="badge color-primary-bg w-h-lh-lg position-right-top-lg">
-							1
-						</span>
-					</span>
+										//large badge
+										<span class="badge_base h2">
+											//Text Goes Here
+											<span class="badge color-primary-bg width_height-
+					-lg pos-right-top-lg">
+												1
+											</span>
+										</span>
 
-					//small badge
-					<span class="badge_base h3">
-						//Text Goes Here
-						<span class="badge color-tertiary-bg w-h-lh-sm position-right-top-sm">
-							1
-						</span>
-					</span>
+										//small badge
+										<span class="badge_base h3">
+											//Text Goes Here
+											<span class="badge color-tertiary-bg width_height-
+					-sm pos-right-top-sm">
+												1
+											</span>
+										</span>
 
-					<span class="badge_base h3">
-						Text with large badge
-						<span class="badge color-primary-bg w-h-lh-lg position-right-top-lg">
-						9+
-						</span>
-					</span>
+										<span class="badge_base h3">
+											Text with large badge
+											<span class="badge color-primary-bg width_height-
+					-lg pos-right-top-lg">
+											9+
+											</span>
+										</span>
 				</script>
 			</div>
 
 			<h3 class="mt1p5">Badge with Button</h3>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="badges flex-col-align-center">
 					<span class="h4">Button with a large badge on the left</span>
-					<!-- <button class="button--primary badge_base color-primary-bg">
-						Action
-						<span
-							class="badge color-secondary-bg w-h-lh-lg position-left-top-lg"
-							>8</span
-						>
-					</button> -->
 
 					<button class="btn btn--primary-light bx--shadow badge_base">
 						Action
 						<span
-							class="badge color-secondary-bg w-h-lh-lg position-left-top-lg"
+							class="badge color-secondary-bg width_height-lg pos-left-top-lg"
 							>8</span
 						>
 					</button>
@@ -189,12 +194,12 @@
 					<span class="h5">Button toggles badge visibility</span>
 					<button
 						onclick="toggleBadgeVisibility()"
-						class=" btn bx--shadow transparent--black badge_base"
+						class="btn bx--shadow transparent--black badge_base"
 					>
 						Hide
 						<span
 							id="badgetoggle1"
-							class="badge color-primary-bg w-h-lh-lg position-right-top-lg"
+							class="badge color-primary-bg width_height-lg pos-right-top-lg"
 							>7</span
 						>
 					</button>
@@ -208,29 +213,31 @@
 					type="text/plain"
 					class="line-numbers language-css snippet_container__script"
 				>
-					<span class="h4">Button with a large badge on the left</span>
-					<button class="button--primary badge_base color-primary-bg">
-						Action
-						<span class="badge color-secondary-bg w-h-lh-lg position-left-top-lg">
-							8
-						</span>
-					</button>
+										<span class="h4">Button with a large badge on the left</span>
+										<button class="button--primary badge_base color-primary-bg">
+											Action
+											<span class="badge color-secondary-bg width_height-
+					-lg pos-left-top-lg">
+												8
+											</span>
+										</button>
 
-					//Add onclick for toggle visibility
-					<span class="h5">Button toggles badge visibility</span>
-					<button onclick="toggleBadgeVisibility()" class="hide-btn badge_base button--primary">
-						Hide
-						<span id="badgetoggle1" class="badge color-primary-bg w-h-lh-lg position-right-top-lg">
-							7
-						</span>
-					</button>
+										//Add onclick for toggle visibility
+										<span class="h5">Button toggles badge visibility</span>
+										<button onclick="toggleBadgeVisibility()" class="hide-btn badge_base button--primary">
+											Hide
+											<span id="badgetoggle1" class="badge color-primary-bg width_height-
+					-lg pos-right-top-lg">
+												7
+											</span>
+										</button>
 				</script>
 			</div>
 
 			<h3 class="mt1p5">Badge with Icon</h3>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="badges flex-col-align-center">
 					<span class="h6">Icon with a badge</span>
 					<icon class="badge_base">
@@ -250,7 +257,7 @@
 								fill="currentColor"
 							></path>
 						</svg>
-						<span class="badge color-tertiary-bg w-h-lh-lg icon_badge"
+						<span class="badge color-tertiary-bg width_height-lg icon_badge"
 							>15+</span
 						>
 					</icon>
@@ -264,14 +271,15 @@
 					type="text/plain"
 					class="line-numbers language-css snippet_container__script"
 				>
-					<icon class="badge_base">
-						<svg ...></svg>
-						<span class="badge color-tertiary-bg w-h-lh-lg icon_badge">15+</span>
-					</icon>
+										<icon class="badge_base">
+											<svg ...></svg>
+											<span class="badge color-tertiary-bg width_height-
+					-lg icon_badge">15+</span>
+										</icon>
 				</script>
 			</div>
 
-			<p class="note_size">
+			<p class="units_instruction">
 				<span><b>Note: </b></span><span>Used 10px as root font size.</span>
 			</p>
 		</main>

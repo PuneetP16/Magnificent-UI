@@ -31,7 +31,7 @@
 	.atrule
 	.url
 	.punctuation {
-	color: var(--COLOR-DEFAULT);
+	color: var(--COLOR-WHITE);
 }
 
 /* for import */
@@ -56,7 +56,7 @@
 	height: 2.5rem;
 	border-radius: 10%;
 	background: var(--COLOR-SECONDARY);
-	margin: 0.3rem 0.8rem;
+	margin: 0.3rem 8px;
 }
 
 .snippet_container

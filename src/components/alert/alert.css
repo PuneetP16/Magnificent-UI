@@ -1,10 +1,10 @@
 .alerts {
-	gap: 0.8rem;
+	gap: 8px;
 }
 
 .alert {
 	border-radius: 1rem;
-	color: rgb(255, 255, 255);
+	color: var(--COLOR-WHITE);
 	cursor: default;
 	font-weight: 500;
 	padding: 1.2rem 1.5rem;
@@ -55,7 +55,8 @@
 .alert--btn__dismiss {
 	padding: 0;
 	margin-left: auto;
-	color: white;
+	color: var(--COLOR-WHITE);
+
 	opacity: 0.8;
 }
 

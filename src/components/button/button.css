@@ -1,5 +1,5 @@
 .buttons {
-	gap: 0.8rem;
+	gap: 8px;
 	flex-wrap: wrap;
 }
 
@@ -7,12 +7,13 @@
 
 .btn {
 	border-radius: 5px;
-	box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+	box-shadow: 0 3px 1px -2px var(--COLOR-BOX-SHADOW1),
+		0 2px 2px var(--COLOR-BOX-SHADOW2), 0 1px 5px var(--COLOR-BOX-SHADOW3);
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 600;
 	opacity: 0.9;
-	padding:1rem;
+	padding: 1rem;
 	transition: all 0.1s ease-in;
 }
 
@@ -21,50 +22,50 @@
 }
 
 .btn:hover {
-	box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+	box-shadow: 0 7px 14px var(--COLOR-BOX-SHADOW4),
+		0 3px 6px var(--COLOR-BOX-SHADOW5);
 	opacity: 1;
 }
 
 .btn--primary {
 	background-color: var(--COLOR-PRIMARY-DARKEST);
 	border: 1px solid var(--COLOR-PRIMARY-DARKEST);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--primary-light {
 	background-color: var(--COLOR-PRIMARY-DARK);
 	border: 1px solid var(--COLOR-PRIMARY-DARK);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .transparent--black {
-	background-color: white;
+	background-color: var(--COLOR-WHITE);
 	color: black;
-	/* border: white; */
 }
 
 .btn--secondary {
 	background-color: var(--COLOR-SECONDARY-DARKEST);
 	border: 1px solid var(--COLOR-SECONDARY-DARKEST);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--success {
 	background-color: var(--COLOR-GREEN);
 	border: 1px solid var(--COLOR-GREEN);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--danger {
 	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
 	border: 1px solid var(--COLOR-AVATAR-STATUS-BUSY);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--warning {
 	background-color: var(--COLOR-ORANGE);
 	border: 1px solid var(--COLOR-ORANGE);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 /* Outline Buttons */
@@ -76,7 +77,7 @@
 
 .btn--outline--primary:hover {
 	background-color: var(--COLOR-PRIMARY-DARKEST);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--outline--secondary {
@@ -86,7 +87,8 @@
 
 .btn--outline--secondary:hover {
 	background-color: var(--COLOR-SECONDARY-DARK);
-	color: white;
+	color: var(--COLOR-WHITE);
+
 	border: 2px solid var(--COLOR-SECONDARY-DARK);
 }
 
@@ -98,7 +100,8 @@
 
 .btn--outline--success:hover {
 	background-color: var(--COLOR-GREEN);
-	color: white;
+	color: var(--COLOR-WHITE);
+
 	border: 2px solid var(--COLOR-GREEN);
 }
 
@@ -109,7 +112,7 @@
 
 .btn--outline--danger:hover {
 	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--outline--warning {
@@ -119,7 +122,7 @@
 
 .btn--outline--warning:hover {
 	background-color: var(--COLOR-ORANGE);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 /* icon button */
@@ -132,7 +135,7 @@
 	border-radius: 5;
 	cursor: pointer;
 	display: flex;
-	gap: 0.8rem;
+	gap: 8px;
 	opacity: 0.8;
 }
 
@@ -148,17 +151,18 @@
 	border: 0;
 	box-shadow: none;
 	color: black;
-	color: white;
+	color: var(--COLOR-WHITE);
+
 	opacity: 0.9;
 	padding: 0.5rem;
 }
 
-.btn--close--transparent:hover, .btn--close--white:hover{
-	box-shadow: 0px 0px 4px 1px rgb(50 50 93 / 10%),
-		0px 0px 5px 5px rgb(0 0 0 / 8%);
+.btn--close--transparent:hover,
+.btn--close--white:hover {
+	box-shadow: 0px 0px 4px 1px var(--COLOR-BOX-SHADOW4),
+		0px 0px 5px 5px var(--COLOR-BOX-SHADOW5);
 	opacity: 1;
 }
-
 
 .btn--link {
 	background: transparent;
@@ -171,11 +175,11 @@
 
 .btn--link:hover {
 	background-color: var(--COLOR-PRIMARY-DARKEST);
-	color: white;
+	color: var(--COLOR-WHITE);
 }
 
 .btn--floating {
-	box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+	box-shadow: 0 3px 5px -1px var(--COLOR-BOX-SHADOW1), 0 6px 10px var(--COLOR-BOX-SHADOW2), 0 1px 18px var(--COLOR-BOX-SHADOW3);
 	font-size: 2.7rem;
 	opacity: 1;
 	padding: 1.4rem;
@@ -201,7 +205,8 @@
 .button--primary {
 	border-radius: 5px;
 	border: none;
-	box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+	box-shadow: 0 3px 1px -2px var(--COLOR-BOX-SHADOW1),
+		0 2px 2px var(--COLOR-BOX-SHADOW2), 0 1px 5px var(--COLOR-BOX-SHADOW3);
 	cursor: pointer;
 	font-weight: 500;
 	padding: 0.5rem 1rem;
@@ -209,7 +214,8 @@
 }
 
 .bx--shadow {
-	box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+	box-shadow: 0 3px 1px -2px var(--COLOR-BOX-SHADOW1),
+		0 2px 2px var(--COLOR-BOX-SHADOW2), 0 1px 5px var(--COLOR-BOX-SHADOW3);
 }
 
 .button--primary:active {

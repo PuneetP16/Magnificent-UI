@@ -13,59 +13,66 @@
 	</head>
 
 	<body>
-		<header class="header flex-align-left">
-			<div class="logo_text grid-center">Magnificent UI</div>
+		<header class="header flex">
+			<div class="brand__text grid-center">Magnificent UI</div>
 		</header>
 		<nav class="nav flex-col-align-center">
-			<h1 class="h4 nav_head">Get Started</h1>
-			<ul class="nav_items_list flex-col-align-center">
-				<li class="nav_items">
-					<a class="nav_links" href="#">Installation</a>
+			<h1 class="h4 nav__head">Get Started</h1>
+			<ul class="nav__items flex-col-align-center">
+				<li class="nav__list">
+					<a class="nav__links" href="#">Installation</a>
 				</li>
-				<li class="nav_items"><a class="nav_links" href="#">Colors</a></li>
-				<li class="nav_items"><a class="nav_links" href="#">Typography</a></li>
+				<li class="nav__list"><a class="nav__links" href="#">Colors</a></li>
+				<li class="nav__list"><a class="nav__links" href="#">Typography</a></li>
 			</ul>
-			<h1 class="h4 nav_head">Components</h1>
-			<ul class="nav_items_list flex-col-align-center">
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/avatar/avatar.html"
+			<h1 class="h4 nav__head">Components</h1>
+			<ul class="nav__items flex-col-align-center">
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/avatar/avatar.html"
 						>Avatar</a
 					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/badge/badge.html">Badge</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/badge/badge.html"
+						>Badge</a
+					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/alert/alert.html">Alert</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/alert/alert.html"
+						>Alert</a
+					>
 				</li>
-				<li class="nav_items">
-					<a
-						class="nav_links nav_link-selected"
-						href="/src/components/button/button.html"
+				<li class="nav__list">
+					<a class="nav__links  nav_link--selected" href="/src/components/button/button.html"
 						>Button</a
 					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/card/card.html">Card</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/card/card.html">Card</a>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/input/input.html">Input</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/input/input.html"
+						>Input</a
+					>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/form/form.html">Form</a>
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/form/form.html">Form</a>
 				</li>
-				<li class="nav_items">
-					<a class="nav_links" href="/src/components/snackbar/snackbar.html"
+				<li class="nav__list">
+					<a class="nav__links" href="/src/components/snackbar/snackbar.html"
 						>Snackbar</a
 					>
 				</li>
 			</ul>
 		</nav>
+
+		<!-- Main Start -->
+
 		<main class="main">
 			<!-- ----Primary Button----- -->
 
-			<h2 class="h2 m_doc-heading">Button</h2>
-			<p class="m_doc-para">
+			<h2 class="h2 m_doc__heading">Button</h2>
+			<p class="m_doc__para">
 				Buttons allow users to take actions and make choices with a single
 				press.
 			</p>
@@ -87,22 +94,22 @@
 			<!-- Standard Button component -->
 			<h3>Standard Button</h3>
 
-			<p class="m_doc-para">
+			<p class="m_doc__para">
 				These are some predefined styles for your buttons each serving its own
 				semantic purpose. There are 5 colors to choose from primary, secondary,
 				success, danger and warning. This can used with class "btn" as follows:
 				<span class="m_doc_class">
-					<span class="m_doc_class-item">btn</span>
-					<span class="m_doc_class-item">btn--primary</span>
-					<span class="m_doc_class-item">btn--secondary</span>
-					<span class="m_doc_class-item">btn--success</span>
-					<span class="m_doc_class-item">btn--danger</span>
-					<span class="m_doc_class-item">btn--warning</span>
+					<span class="m_doc_class__item">btn</span>
+					<span class="m_doc_class__item">btn--primary</span>
+					<span class="m_doc_class__item">btn--secondary</span>
+					<span class="m_doc_class__item">btn--success</span>
+					<span class="m_doc_class__item">btn--danger</span>
+					<span class="m_doc_class__item">btn--warning</span>
 				</span>
 			</p>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="buttons flex-center">
 					<button class="btn btn--primary">Primary</button>
 					<button class="btn btn--secondary">Secondary</button>
@@ -129,20 +136,20 @@
 			<!-- Outline Button component -->
 			<h3>Outline Button</h3>
 
-			<p class="m_doc-para">
+			<p class="m_doc__para">
 				If you want buttons which are transparent, Outline buttons can be used.
 				<span class="m_doc_class">
-					<span class="m_doc_class-item">btn</span>
-					<span class="m_doc_class-item">btn--outline--primary</span>
-					<span class="m_doc_class-item">btn--outline--secondary</span>
-					<span class="m_doc_class-item">btn--outline--success</span>
-					<span class="m_doc_class-item">btn--outline--danger</span>
-					<span class="m_doc_class-item">btn--outline--warning</span>
+					<span class="m_doc_class__item">btn</span>
+					<span class="m_doc_class__item">btn--outline--primary</span>
+					<span class="m_doc_class__item">btn--outline--secondary</span>
+					<span class="m_doc_class__item">btn--outline--success</span>
+					<span class="m_doc_class__item">btn--outline--danger</span>
+					<span class="m_doc_class__item">btn--outline--warning</span>
 				</span>
 			</p>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="buttons flex-center">
 					<button class="btn btn--outline--primary">Primary</button>
 					<button class="btn btn--outline--secondary">Secondary</button>
@@ -168,19 +175,19 @@
 			<!-- Icon Button component -->
 			<h3>Icon and Icon with Label Button</h3>
 
-			<p class="m_doc-para">
+			<p class="m_doc__para">
 				<span class="m_doc_class">
-					<span class="m_doc_class-item">btn</span>
-					<span class="m_doc_class-item">btn--round</span>
-					<span class="m_doc_class-item">btn--secondary</span>
-					<span class="m_doc_class-item">btn--icon</span>
-					<span class="m_doc_class-item">btn--squared</span>
-					<span class="m_doc_class-item">btn--circular</span>
+					<span class="m_doc_class__item">btn</span>
+					<span class="m_doc_class__item">btn--round</span>
+					<span class="m_doc_class__item">btn--secondary</span>
+					<span class="m_doc_class__item">btn--icon</span>
+					<span class="m_doc_class__item">btn--squared</span>
+					<span class="m_doc_class__item">btn--circular</span>
 				</span>
 			</p>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="buttons flex-center">
 					<button class="btn btn--outline--danger btn--icon btn--round">
 						Delete<i class="bx bxs-trash-alt"></i>
@@ -235,7 +242,7 @@
 			<!-- Floating Icon and Link Button component -->
 			<h3>Floating Action Icon and Link Button</h3>
 
-			<p class="m_doc-para">
+			<p class="m_doc__para">
 				Floating buttons are usually icon buttons that calls for an important
 				action on the overall page. Generally located at bottom right.
 				Magnificent UI provides few classes that makes the design look cool and
@@ -243,16 +250,16 @@
 				according to their respective use cases. By default it is absolute to
 				the viewport.
 				<span class="m_doc_class">
-					<span class="m_doc_class-item">btn</span>
-					<span class="m_doc_class-item">btn--primary</span>
-					<span class="m_doc_class-item">btn--icon</span>
-					<span class="m_doc_class-item">btn--circular</span>
-					<span class="m_doc_class-item">btn--floating</span>
+					<span class="m_doc_class__item">btn</span>
+					<span class="m_doc_class__item">btn--primary</span>
+					<span class="m_doc_class__item">btn--icon</span>
+					<span class="m_doc_class__item">btn--circular</span>
+					<span class="m_doc_class__item">btn--floating</span>
 				</span>
 			</p>
 
 			<!-- component display container -->
-			<div class="component_display_container flex-center margin-top">
+			<div class="comp_container flex-center margin-top">
 				<div class="buttons flex-center">
 					<button class="btn btn--primary btn--link">Link button</button>
 					<button

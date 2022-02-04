@@ -12,7 +12,7 @@
 }
 
 :root {
-	--COLOR-DEFAULT:white;
+	--COLOR-WHITE: white;
 	--COLOR-BG: lavender;
 
 	--COLOR-PRIMARY-LIGHT: #e9d5ff;
@@ -30,6 +30,7 @@
 	--COLOR-OFF-WHITE: #d8bdf3;
 	--COLOR-PLACEHOLDER: #291938;
 	--COLOR-PRIMARY-TEXT: rgba(10, 10, 10, 0.95);
+	--COLOR-BLACK: black;
 
 	/* --ALERT-- */
 	--COLOR-BLUE: #2a7bfd;
@@ -51,17 +52,26 @@
 	--FONT-BADGE-SECONDAY: 2.6rem;
 
 	/* Badge-size */
-
 	--BADGE-SIZE-PRIMARY: 2.5rem;
 	--BADGE-SIZE-SECONDARY: 3.4rem;
 
 	/* Main Content */
 	--WIDTH-MAIN-CONTENT: 90%;
+	--COLOR-COMP-BG:rgb(245, 245, 248);
 	--COLOR-DOC-CLASS: #411467;
 
 	/* SNIPPET THEME */
-	--COLOR-SNIPPET-COMMENTS:#d8bdf3;
-	--COLOR-IMPORT:#fef9c3;
+	--COLOR-SNIPPET-COMMENTS: #d8bdf3;
+	--COLOR-IMPORT: #fef9c3;
+
+	/* BOx shadow */
+	--COLOR-BOX-SHADOW1: #0003;
+	--COLOR-BOX-SHADOW2: #00000024;
+	--COLOR-BOX-SHADOW3: #0000001f;
+	--COLOR-BOX-SHADOW4:rgb(50 50 93 / 10%);
+	--COLOR-BOX-SHADOW5: rgb(0 0 0 / 8%);
+	/* --COLOR-BOX-SHADOW6: #0000001f; */
+
 }
 
 /* Remove default margin */
