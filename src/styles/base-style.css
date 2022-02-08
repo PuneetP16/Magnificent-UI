@@ -1,7 +1,6 @@
-/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap");
-
+@import url(/src/styles/color.css);
 /* Css-reset */
 *,
 *::before,
@@ -12,42 +11,7 @@
 }
 
 :root {
-	--COLOR-WHITE: white;
-	--COLOR-BG: lavender;
-
-	--COLOR-PRIMARY-LIGHT: #e9d5ff;
-	--COLOR-PRIMARY: #a855f7;
-	--COLOR-PRIMARY-DARK: #6b21a8;
-	--COLOR-PRIMARY-DARKEST: #350857;
-	--COLOR-PRIMARY-HOVER: #e9d5ff;
-
-	--COLOR-SECONDARY-LIGHT: #ccfbf1;
-	--COLOR-SECONDARY: #99f6e4;
-	--COLOR-SECONDARY-DARK: #0d9488;
-	--COLOR-SECONDARY-HOVER: #f0fdfa;
-	--COLOR-SECONDARY-DARKEST: #0d6f64;
-
-	--COLOR-OFF-WHITE: #d8bdf3;
-	--COLOR-PLACEHOLDER: #291938;
-	--COLOR-PRIMARY-TEXT: rgba(10, 10, 10, 0.95);
-	--COLOR-BLACK: black;
-
-	/* --ALERT-- */
-	--COLOR-BLUE: #2a7bfd;
-	--COLOR-GREEN: #0fa044;
-	--COLOR-GREEN-DARK: #267944;
-	--COLOR-RED: #ff0000;
-	--COLOR-ORANGE: #ff6a00;
-	/* --AVATAR-- */
-
-	--COLOR-AVATAR-TEXT: #581c87;
-	--COLOR-AVATAR-STATUS-ONLINE: #0cdd59;
-	--COLOR-AVATAR-STATUS-OFFLINE: rgb(211, 221, 216);
-	--COLOR-AVATAR-STATUS-IDLE: #f8e74f;
-	--COLOR-AVATAR-STATUS-BUSY: #ce2e2e;
-
 	/* FONT */
-
 	--FONT-BADGE-PRIMARY: 1.6rem;
 	--FONT-BADGE-SECONDAY: 2.6rem;
 
@@ -57,21 +21,6 @@
 
 	/* Main Content */
 	--WIDTH-MAIN-CONTENT: 90%;
-	--COLOR-COMP-BG:rgb(245, 245, 248);
-	--COLOR-DOC-CLASS: #411467;
-
-	/* SNIPPET THEME */
-	--COLOR-SNIPPET-COMMENTS: #d8bdf3;
-	--COLOR-IMPORT: #fef9c3;
-
-	/* BOx shadow */
-	--COLOR-BOX-SHADOW1: #0003;
-	--COLOR-BOX-SHADOW2: #00000024;
-	--COLOR-BOX-SHADOW3: #0000001f;
-	--COLOR-BOX-SHADOW4:rgb(50 50 93 / 10%);
-	--COLOR-BOX-SHADOW5: rgb(0 0 0 / 8%);
-	/* --COLOR-BOX-SHADOW6: #0000001f; */
-
 }
 
 /* Remove default margin */

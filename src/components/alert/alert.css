@@ -10,6 +10,7 @@
 	padding: 1.2rem 1.5rem;
 	text-align: left;
 	width: 100%;
+	border: 1px solid;
 }
 
 .alert:hover {
@@ -17,32 +18,38 @@
 }
 
 .alert--primary {
-	background-color: var(--COLOR-PRIMARY-DARKEST);
+	background-color: var(--COLOR-PRIMARY);
+	border: 1px solid var(--COLOR-PRIMARY);
 }
 
 .alert--secondary {
-	background-color: var(--COLOR-SECONDARY-DARKEST);
+	background-color: var(--COLOR-SECONDARY);
+	color: var(--COLOR-BLACK);
+	border: 1px solid var(--COLOR-SECONDARY-DARK);
 }
 
 .alert--info {
-	background-color: var(--COLOR-BLUE);
+	background-color: var(--COLOR-INFO);
+	border: 1px solid var(--COLOR-PRIMARY);
 }
 
 .alert--success {
-	background-color: var(--COLOR-GREEN);
+	background-color: var(--COLOR-SUCCESS);
+	border: 1px solid var(--COLOR-PRIMARY);
 }
 
 .alert--danger {
-	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
+	background-color: var(--COLOR-DANGER);
+	border: 1px solid var(--COLOR-PRIMARY);
 }
 
 .alert--warning {
-	background-color: var(--COLOR-ORANGE);
+	background-color: var(--COLOR-WARNING);
+	border: 1px solid var(--COLOR-PRIMARY);
 }
 
 .alert--dismissable {
 	align-items: center;
-	background-color: var(--COLOR-ORANGE);
 	display: flex;
 	gap: 1rem;
 	padding: 0.7rem 1.5rem;

@@ -10,9 +10,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--COLOR-SECONDARY);
+	background-color: var(--COLOR-TERTIARY);
 	line-height: 3rem;
-	color: var(--COLOR-AVATAR-TEXT);
+	color: var(--COLOR-PRIMARY);
 }
 
 .avatar__text--lg {
@@ -61,7 +61,7 @@
 .avatar__status {
 	position: absolute;
 	padding: 0.25em;
-	border: 0.2rem solid white;
+	border: 0.2rem solid var(--COLOR-WHITE);
 	border-radius: 50%;
 	bottom: 0;
 	right: 0;
@@ -70,17 +70,17 @@
 .avatar__status--online {
 	bottom: 3px;
 	right: 3px;
-	background-color: var(--COLOR-AVATAR-STATUS-ONLINE);
+	background-color: var(--COLOR-SUCCESS);
 }
 
 .avatar__status--offline {
-	background-color: var(--COLOR-AVATAR-STATUS-OFFLINE);
-}
-
-.avatar__status--busy {
-	background-color: var(--COLOR-AVATAR-STATUS-IDLE);
+	background-color: var(--COLOR-OFFLINE);
 }
 
 .avatar__status--idle {
-	background-color: var(--COLOR-AVATAR-STATUS-BUSY);
+	background-color: var(--COLOR-SECONDARY);
+}
+
+.avatar__status--busy {
+	background-color: var(--COLOR-DANGER);
 }

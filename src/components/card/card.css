@@ -1,8 +1,4 @@
-.comp_container--cards {
-	background-color: var(--COLOR-OFFWHITE);
-}
 :root {
-	--COLOR-BACKGROUND-CARD: #ffffff;
 	--PADDING-CARD-BODY: 1rem;
 	--PADDING-CARD-ELEM: 6px;
 }
@@ -84,7 +80,7 @@
 .card__link > svg {
 	width: 32px;
 	height: 32px;
-	fill: var(--COLOR-PRIMARY-DARK);
+	fill: var(--COLOR-PRIMARY);
 	opacity: 0.9;
 }
 
@@ -97,7 +93,7 @@
 	position: relative;
 }
 
-.card--text_overlay .card__header_text{
+.card--text_overlay .card__header_text {
 	position: absolute;
 	bottom: 130px;
 	left: 20px;
@@ -139,6 +135,6 @@
 .card--horizontal .card__footer > .card__actions,
 .card--horizontal .card__footer > .card__icons {
 	justify-content: space-evenly;
-	flex:1;
+	flex: 1;
 	flex-wrap: wrap;
 }
