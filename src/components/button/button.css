@@ -14,7 +14,8 @@
 	font-weight: 600;
 	opacity: 0.9;
 	padding: 1rem;
-	transition: all 0.1s ease-in;
+	transition: all 0.3s ease-in;
+	min-width: fit-content;
 }
 
 .btn:active {
@@ -23,7 +24,7 @@
 
 .btn:hover {
 	box-shadow: 0 7px 14px var(--COLOR-BOX-SHADOW4),
-		0 3px 6px var(--COLOR-BOX-SHADOW5);
+	0 3px 6px var(--COLOR-BOX-SHADOW5);
 	opacity: 1;
 }
 
@@ -137,6 +138,8 @@
 	display: flex;
 	gap: 8px;
 	opacity: 0.8;
+	min-width: auto;
+
 }
 
 .btn--close--transparent {

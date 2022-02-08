@@ -1,0 +1,144 @@
+.comp_container--cards {
+	background-color: var(--COLOR-OFFWHITE);
+}
+:root {
+	--COLOR-BACKGROUND-CARD: #ffffff;
+	--PADDING-CARD-BODY: 1rem;
+	--PADDING-CARD-ELEM: 6px;
+}
+
+.card {
+	background-color: var(--COLOR-WHITE);
+	margin: auto;
+	border: 1px solid var(--COLOR-OFFWHITE);
+	max-width: 38rem;
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 10px 40px 0px;
+	transform: scale(1.001);
+}
+
+.card__img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.card__body {
+	display: flex;
+	flex-flow: column wrap;
+	padding: var(--PADDING-CARD-BODY) var(--PADDING-CARD-BODY) 0
+		var(--PADDING-CARD-BODY);
+}
+
+.card__title {
+	font-size: 2.2rem;
+	padding: var(--PADDING-CARD-ELEM) 0;
+}
+
+.card__subtitle {
+	font-size: 1.5rem;
+}
+
+.card__para {
+	font-size: 1.4rem;
+	padding: 8px 0;
+}
+
+.card__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: var(--PADDING-CARD-BODY);
+	padding-top: 0;
+}
+
+.card__actions {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.card__button {
+	font-size: 1.6rem;
+}
+
+.card__icons {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+
+.card__link {
+	text-decoration: none;
+	width: 3.6rem;
+	height: 3.6rem;
+	justify-content: center;
+}
+
+.card__link > svg {
+	width: 32px;
+	height: 32px;
+	fill: var(--COLOR-PRIMARY-DARK);
+	opacity: 0.9;
+}
+
+.card__link > svg:hover {
+	opacity: 1;
+}
+
+/* ------WITH TEXT-OVERLAY-------- */
+.card {
+	position: relative;
+}
+
+.card--text_overlay .card__header_text{
+	position: absolute;
+	bottom: 130px;
+	left: 20px;
+	color: white;
+	/* background-image: linear-gradient(rgba(24, 26, 27, 0), rgba(24, 26, 27, 0.7), rgba(24, 26, 27, 0.99), rgb(24, 26, 27)); */
+}
+
+.card--text_overlay .card__figure {
+	filter: blur(0.5px);
+	-webkit-filter: blur(0.5px);
+}
+
+/* Only text cards */
+
+.card--only_text .card__figure {
+	display: none;
+}
+
+/* Horizontal cards  */
+
+.card--horizontal {
+	background-color: var(--COLOR-WHITE);
+	margin: auto;
+	border: 1px solid var(--COLOR-OFFWHITE);
+	max-width: 49rem;
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card--horizontal .card__body {
+	width: 25rem;
+}
+
+.card--horizontal .card__footer {
+	padding-top: var(--PADDING-CARD-BODY);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card--horizontal .card__footer > .card__actions,
+.card--horizontal .card__footer > .card__icons {
+	justify-content: space-evenly;
+	flex:1;
+	flex-wrap: wrap;
+}
