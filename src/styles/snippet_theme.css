@@ -4,7 +4,7 @@
 	width: var(--WIDTH-MAIN-CONTENT);
 	margin: 3rem auto 4rem 0;
 	padding: 5px;
-	background: var(--COLOR-PRIMARY-DARKEST);
+	background: var(--COLOR-PRIMARY-DARK);
 	text-align: center;
 }
 
@@ -16,13 +16,14 @@
 }
 
 .snippet_container .snippet_container__script {
+	font-weight: 500;
 	color: var(--COLOR-SNIPPET-COMMENTS);
-	background: var(--COLOR-PRIMARY-DARKEST);
+	background: var(--COLOR-PRIMARY-DARK);
 }
 
 /* for strings */
 .snippet_container .code-toolbar .snippet_container__script .string {
-	color: var(--COLOR-SECONDARY);
+	color: var(--COLOR-STRINGS);
 }
 
 /* for braces */
@@ -50,12 +51,13 @@
 	.toolbar
 	.toolbar-item
 	.copy-to-clipboard-button {
+	cursor:pointer;
 	font-size: 1.4rem;
-	color: var(--COLOR-PRIMARY-DARKEST);
+	color: var(--COLOR-PRIMARY);
 	font-weight: 600;
 	height: 2.5rem;
 	border-radius: 10%;
-	background: var(--COLOR-SECONDARY);
+	background: var(--COLOR-TERTIARY);
 	margin: 0.3rem 8px;
 }
 
