@@ -28,6 +28,12 @@
 	opacity: 1;
 }
 
+.btn--contained {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
 .btn--primary {
 	background-color: var(--COLOR-PRIMARY);
 	border: 1px solid var(--COLOR-PRIMARY);
@@ -153,7 +159,6 @@
 .btn--close--white {
 	border: 0;
 	box-shadow: none;
-	color: black;
 	color: var(--COLOR-WHITE);
 
 	opacity: 0.9;
@@ -162,8 +167,8 @@
 
 .btn--close--transparent:hover,
 .btn--close--white:hover {
-	box-shadow: 0px 0px 4px 1px var(--COLOR-BOX-SHADOW4),
-		0px 0px 5px 5px var(--COLOR-BOX-SHADOW5);
+	box-shadow: 0px 0px 1px 1px var(--COLOR-BOX-SHADOW4),
+		0px 0px 1px 5px var(--COLOR-BOX-SHADOW5);
 	opacity: 1;
 }
 

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+		<title>Typography</title>
+	</head>
+
+	<body>
+		<body>
+			<header class="header flex">
+				<div class="brand__text grid-center">Magnificent UI</div>
+				<div class="social__handles">
+                    <a href="#" class="social__links">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="#" class="social__links">
+                        <i class='bx bxl-linkedin-square' ></i>
+                    </a>
+                    <a href="" class="social__links">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                </div>
+			</header>
+			<nav class="nav flex-col-align-center">
+				<h1 class="h4 nav__head">Get Started</h1>
+				<ul class="nav__items flex-col-align-center">
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/usage/usage.html">Usage</a>
+					</li>
+					<li class="nav__list"><a class="nav__links" href="#">Colors</a></li>
+					<li class="nav__list"><a class="nav__links nav_link--selected" href="/src/components/typography/typography.html">Typography</a></li>
+				</ul>
+				<h1 class="h4 nav__head">Components</h1>
+				<ul class="nav__items flex-col-align-center">
+					<li class="nav__list">
+						<a
+							class="nav__links"
+							href="/src/components/avatar/avatar.html"
+							>Avatar</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/badge/badge.html"
+							>Badge</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/alert/alert.html"
+							>Alert</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/button/button.html"
+							>Button</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/card/card.html">Card</a>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/input/input.html"
+							>Input</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/image/image.html"
+							>Image</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/snackbar/snackbar.html"
+							>Snackbar</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/lists/lists.html"
+							>Lists</a
+						>
+					</li>
+				</ul>
+			</nav>
+	
+			<!-- Main Start -->
+	
+			<main class="main">
+				<!-- ----Typography----- -->
+	
+				<h2 class="h2 m_doc__heading">Typography</h2>
+				<p class="m_doc__para">
+                    Typography component makes it easy to apply a default set of font weights and sizes in your application.
+					Use typography to present your design and content as clearly and efficiently as possible. 
+				</p>
+	
+				<!-- SNIPPET CONTAINER -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
+					>
+						// CSS
+						@import url("https://magnificentui.netlify.app/src/components/typography/typography.css");
+	
+						// HTML
+						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/typography/typography.css">
+					</script>
+				</div>
+	
+				<!-- Headings component -->
+				<h3>Headings</h3>
+	
+				<p class="m_doc__para">
+					The heading has 6 sizes.
+					<span class="m_doc_class">
+						<span class="m_doc_class__item">h1</span>
+						<span class="m_doc_class__item">h2</span>
+						<span class="m_doc_class__item">h3</span>
+						<span class="m_doc_class__item">h4</span>
+						<span class="m_doc_class__item">h5</span>
+						<span class="m_doc_class__item">h6</span>
+					</span>
+				</p>
+	
+				<!-- component display container -->
+				<div class="comp_container flex-col">
+                    <h1 class="h1">h1. Heading</h1>
+                    <h2 class="h2">h2. Heading</h2>
+                    <h3 class="h3">h3. Heading</h3>
+                    <h4 class="h4">h4. Heading</h4>
+                    <h5 class="h5">h5. Heading</h5>
+                    <h6 class="h6">h6. Heading</h6>
+				</div>
+	
+				<!-- code snippet container -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
+					>
+                    <h1 class="h1">h1. Heading</h1>
+                    <h2 class="h2">h2. Heading</h2>
+                    <h3 class="h3">h3. Heading</h3>
+                    <h4 class="h4">h4. Heading</h4>
+                    <h5 class="h5">h5. Heading</h5>
+                    <h6 class="h6">h6. Heading</h6>
+					</script>
+				</div>
+	
+				<!--  Font CDN -->
+				<h3>Font and its CDN</h3>
+                Fontsource can be configured to load specific subsets, weights and styles. 
+				<p class="m_doc__para">
+					
+					<span class="m_doc_class">
+                        
+					</span>
+				</p>
+	
+				<!-- component display container -->
+				<div class="comp_container flex-center">
+					<h1>This is an IBM Plex Sans font</h1>
+				</div>
+	
+				<!-- code snippet container -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
+					>
+                    //CSS
+                    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap");
+                    
+                    // HTML
+                    <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+                    />
+					</script>
+				</div>
+	
+				<p class="units_instruction">
+					<span><b>Note: </b></span><span>Used 10px as root font size.</span>
+				</p>
+			</main>
+			<script src="/src/javascript/prism.js"></script>
+			<script src="/src/javascript/app.js"></script>
+		</body>
+</html>

@@ -21,6 +21,10 @@
 
 	/* Main Content */
 	--WIDTH-MAIN-CONTENT: 90%;
+
+	/* CARD */
+	--PADDING-CARD-BODY: 1rem;
+	--PADDING-CARD-ELEM: 16px;
 }
 
 /* Remove default margin */
@@ -75,4 +79,15 @@ button,
 textarea,
 select {
 	font: inherit;
+}
+
+/* Default scroll bar styles  */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--COLOR-PRIMARY);
+	border-radius: 5px;
 }
