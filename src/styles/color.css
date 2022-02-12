@@ -47,8 +47,14 @@
 
 	/* CARD */
 	--COLOR-DISCOUNT-BG: #ffebcd;
-	--COLOR-BOX-SHADOW-CARD: rgba(0, 0, 0, 0.56);
+	--COLOR-CARD-BOX-SHADOW: rgba(0, 0, 0, 0.56);
 
 	/* LISTS */
 	--COLOR-LIST-HOVER: #ecfdff;
+
+	/* Ribbon */
+	--COLOR-RIBBON-BG: #79a70a;
+	--COLOR-RIBBON-LG-1: #2989d8;
+	--COLOR-RIBBON-PRIMARY: #1e5799;
+	--COLOR-RIBBON-BOX-SHADOW: rgba(0, 0, 0, 1);
 }
