@@ -40,4 +40,13 @@
 	--COLOR-BOX-SHADOW3: #0000001f;
 	--COLOR-BOX-SHADOW4: rgb(50 50 93 / 10%);
 	--COLOR-BOX-SHADOW5: rgb(0 0 0 / 8%);
+
+	/* ACTIVE */
+
+	--COLOR-ACTIVE:aqua;
+
+
+	/* CARD */
+	--COLOR-DISCOUNT-BG:rgb(255, 235, 205);
+	--COLOR-BOX-SHADOW-CARD:rgba(0, 0, 0, 0.56);
 }

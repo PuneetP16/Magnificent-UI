@@ -46,3 +46,8 @@
 .fw {
 	width: 100%;
 }
+
+
+.color--black {
+	color:var(--COLOR-BLACK);
+}

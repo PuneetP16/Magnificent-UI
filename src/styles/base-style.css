@@ -21,6 +21,10 @@
 
 	/* Main Content */
 	--WIDTH-MAIN-CONTENT: 90%;
+
+	/* CARD */
+	--PADDING-CARD-BODY: 1rem;
+	--PADDING-CARD-ELEM: 16px;
 }
 
 /* Remove default margin */
@@ -76,3 +80,5 @@ textarea,
 select {
 	font: inherit;
 }
+
+
