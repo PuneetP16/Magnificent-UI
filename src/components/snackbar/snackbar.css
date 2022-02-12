@@ -23,10 +23,10 @@
 
 .snackbar .btn--contained {
 	width: 6.4rem;
-	padding: 0 0.8rem;
+	padding: 0 8px;
 }
 
 .snackbar .btn--close--transparent {
-	margin-left: 0.8rem;
-	margin-right: 0.8rem;
+	margin-left: 8px;
+	margin-right: 8px;
 }

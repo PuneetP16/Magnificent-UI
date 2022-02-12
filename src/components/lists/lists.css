@@ -1,28 +1,26 @@
 .lists__head {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 8px 0;
-
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 8px 0;
 }
 
 .lists__menu {
-    list-style: none;
-    padding: 0 1rem;
+	list-style: none;
+	padding: 0 1rem;
 	border-radius: 8px;
-    border: 1px solid var(--COLOR-PRIMARY);
+	border: 1px solid var(--COLOR-PRIMARY);
 }
 
 .lists__spaced {
-    gap: 3px;
+	gap: 3px;
 }
-.lists--stacked{
-    gap:0;
+.lists--stacked {
+	gap: 0;
 }
 .lists__head {
 	font-weight: 500;
 	font-size: 2.2rem;
-
 }
 
 .lists__links {
@@ -31,11 +29,10 @@
 	padding: 2px 8px;
 	width: 100%;
 	border-radius: 8px;
-    color: var(--COLOR-BLACK);
+	color: var(--COLOR-BLACK);
 }
 
-
 .lists__links:hover {
-    color: var(--COLOR-PRIMARY);
-    background-color: rgb(236, 253, 255);
+	color: var(--COLOR-PRIMARY);
+	background-color: var(--COLOR-LIST-HOVER);
 }

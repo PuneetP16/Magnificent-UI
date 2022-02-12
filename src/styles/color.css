@@ -1,5 +1,5 @@
 :root {
-    --COLOR-WHITE: white;
+	--COLOR-WHITE: white;
 	--COLOR-BLACK: black;
 
 	/* --MY--THEME- */
@@ -8,7 +8,7 @@
 	--COLOR-OFFBLACK: #272b2c;
 
 	--COLOR-PRIMARY: #2255a4;
-	--COLOR-PRIMARY-DARK:#163d77;
+	--COLOR-PRIMARY-DARK: #163d77;
 
 	--COLOR-SECONDARY: #d6b268;
 	--COLOR-SECONDARY-DARK: #6b5934;
@@ -21,8 +21,8 @@
 	/* --ALERT-- */
 	--COLOR-INFO: #2a7bfd;
 	--COLOR-WARNING: #e7670c;
-	--COLOR-DANGER:#ce2e2e;
-	--COLOR-SUCCESS:#0fa044;
+	--COLOR-DANGER: #ce2e2e;
+	--COLOR-SUCCESS: #0fa044;
 
 	/* --STATUS-- */
 	--COLOR-ONLINE: #0cdd59;
@@ -34,19 +34,21 @@
 	--COLOR-STRINGS: #cdf6ff;
 	--COLOR-IMPORT: #ff8800;
 
-    	/* Box shadow */
+	/* Box shadow */
 	--COLOR-BOX-SHADOW1: #0003;
 	--COLOR-BOX-SHADOW2: #00000024;
 	--COLOR-BOX-SHADOW3: #0000001f;
-	--COLOR-BOX-SHADOW4: rgb(50 50 93 / 10%);
-	--COLOR-BOX-SHADOW5: rgb(0 0 0 / 8%);
+	--COLOR-BOX-SHADOW4: #32325d1a;
+	--COLOR-BOX-SHADOW5: #00000014;
 
 	/* ACTIVE */
 
-	--COLOR-ACTIVE:aqua;
-
+	--COLOR-ACTIVE: aqua;
 
 	/* CARD */
-	--COLOR-DISCOUNT-BG:rgb(255, 235, 205);
-	--COLOR-BOX-SHADOW-CARD:rgba(0, 0, 0, 0.56);
+	--COLOR-DISCOUNT-BG: #ffebcd;
+	--COLOR-BOX-SHADOW-CARD: rgba(0, 0, 0, 0.56);
+
+	/* LISTS */
+	--COLOR-LIST-HOVER: #ecfdff;
 }
