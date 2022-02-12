@@ -47,7 +47,9 @@
 
 	/* CARD */
 	--COLOR-DISCOUNT-BG: #ffebcd;
-	--COLOR-CARD-BOX-SHADOW: rgba(0, 0, 0, 0.56);
+	--COLOR-CARD-BOX-SHADOW1: rgba(0, 0, 0, 0.56);
+	--COLOR-CARD-BOX-SHADOW2: #32325d1a;
+	--COLOR-CARD-BOX-SHADOW3: #324dc549;
 
 	/* LISTS */
 	--COLOR-LIST-HOVER: #ecfdff;

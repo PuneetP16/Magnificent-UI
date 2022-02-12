@@ -8,7 +8,7 @@
 }
 
 .card:hover {
-	box-shadow: 0px 5px 40px 0px var(--COLOR-CARD-BOX-SHADOW);
+	box-shadow: 0px 5px 40px 0px var(--COLOR-CARD-BOX-SHADOW1);
 }
 
 .card__body {
@@ -245,10 +245,18 @@
 	display: none;
 	position: absolute;
 	color: var(--COLOR-PRIMARY);
-	top: 3px;
-	right: 3px;
+	top: 6px;
+	right: 6px;
 	backdrop-filter: blur(4px);
 	z-index: 2;
+	padding:0;
+	/* transition: box-shadow 1s ease-in-out; */
+
+}
+
+.card__dismiss:hover {
+	box-shadow: 0px 0px 1px 1px var(--COLOR-CARD-BOX-SHADOW2),
+	0px 0px 1px 5px var(--COLOR-CARD-BOX-SHADOW3);
 }
 
 .light {

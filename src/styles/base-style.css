@@ -81,4 +81,13 @@ select {
 	font: inherit;
 }
 
-
+/* Default scroll bar styles  */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--COLOR-PRIMARY);
+	border-radius: 5px;
+}
