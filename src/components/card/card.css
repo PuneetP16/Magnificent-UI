@@ -275,6 +275,15 @@
 
 /* ------------------ Shopping Cards ---------------  */
 
+.card--vertical_v2 {
+	max-width: 27.5rem;
+}
+
+.card--vertical_v2 .card__content {
+	flex-flow: column wrap;
+	text-align: left;
+}
+
 .card--shopping .card__price {
 	margin: auto;
 	justify-content: center;
