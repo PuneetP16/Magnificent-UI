@@ -17,13 +17,13 @@
 			<div class="brand__text grid-center">Magnificent UI</div>
 			<div class="social__handles">
 				<a href="#" class="social__links">
-					<i class='bx bxl-twitter'></i>
+					<i class="bx bxl-twitter"></i>
 				</a>
 				<a href="#" class="social__links">
-					<i class='bx bxl-linkedin-square' ></i>
+					<i class="bx bxl-linkedin-square"></i>
 				</a>
 				<a href="" class="social__links">
-					<i class='bx bxl-github' ></i>
+					<i class="bx bxl-github"></i>
 				</a>
 			</div>
 		</header>
@@ -31,17 +31,23 @@
 			<h1 class="h4 nav__head">Get Started</h1>
 			<ul class="nav__items flex-col-align-center">
 				<li class="nav__list">
-					<a class="nav__links" href="/src/components/usage/usage.html">Usage</a>
+					<a class="nav__links" href="/src/components/usage/usage.html"
+						>Usage</a
+					>
 				</li>
 				<li class="nav__list"><a class="nav__links" href="#">Colors</a></li>
-				<li class="nav__list"><a class="nav__links" href="/src/components/typography/typography.html">Typography</a></li>
+				<li class="nav__list">
+					<a
+						class="nav__links"
+						href="/src/components/typography/typography.html"
+						>Typography</a
+					>
+				</li>
 			</ul>
 			<h1 class="h4 nav__head">Components</h1>
 			<ul class="nav__items flex-col-align-center">
 				<li class="nav__list">
-					<a
-						class="nav__links"
-						href="/src/components/avatar/avatar.html"
+					<a class="nav__links" href="/src/components/avatar/avatar.html"
 						>Avatar</a
 					>
 				</li>
@@ -61,7 +67,11 @@
 					>
 				</li>
 				<li class="nav__list">
-					<a class="nav__links nav_link--selected" href="/src/components/card/card.html">Card</a>
+					<a
+						class="nav__links nav_link--selected"
+						href="/src/components/card/card.html"
+						>Card</a
+					>
 				</li>
 				<li class="nav__list">
 					<a class="nav__links" href="/src/components/input/input.html"
@@ -189,7 +199,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
 								>
 									<i class="bx bx-dots-vertical-rounded"></i>
 								</a>
@@ -275,7 +285,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
 								>
 									<i class="bx bx-dots-vertical-rounded"></i>
 								</a>
@@ -366,7 +376,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
 								>
 									<i class="bx bx-dots-vertical-rounded"></i>
 								</a>
@@ -457,7 +467,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
 								>
 									<i class="bx bx-dots-vertical-rounded"></i>
 								</a>
@@ -547,7 +557,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
 								>
 									<i class="bx bx-dots-vertical-rounded"></i>
 								</a>
@@ -571,23 +581,21 @@
 					type="text/plain"
 					class="line-numbers language-css snippet_container__script"
 				>
-				// Just change the classes in article element to get different variants
-				<article class="card card--horizontal card--dismiss">
-					// complete code at the bottom of the page
+					// Just change the classes in article element to get different variants
+					<article class="card card--horizontal card--dismiss">
+						// complete code at the bottom of the page
 				</script>
 			</div>
 
+			<!-- Shopping CARDS -->
+			<h3>Shopping Cards</h3>
+
+			<!-- difference added card--shopping classs and share, like and options classes in card__link -->
+
 			<!-- Card Component Code display -->
-			<h3>Complete Code Snippet for Different Card Variants</h3>
-			<!-- snippet_container -->
-			<div class="snippet_container">
-				<script
-					type="text/plain"
-					class="line-numbers language-css snippet_container__script"
-				>
-				// This is complete code of vertical card with badge component, 
-				// to change the variant just change the classes in article element.
-				<article class="card card--vertical card--badge">
+
+			<div class="comp_container flex-center comp_container--cards">
+				<article class="card card--vertical card--badge card--shopping">
 					<div class="card__content flex">
 						<header class="card__header flex-center">
 							<figure class="card__figure">
@@ -627,7 +635,7 @@
 							<li class="card__list flex-center">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="card__link btn btn--outline--primary btn--icon btn--circular like"
 								>
 									<i class="bx bx-heart"></i>
 								</a>
@@ -635,7 +643,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="card__link btn btn--outline--primary btn--icon btn--circular share"
 								>
 									<i class="bx bx-share-alt"></i>
 								</a>
@@ -643,7 +651,7 @@
 							<li class="card__list">
 								<a
 									href="#"
-									class="card__link btn btn--outline--primary btn--icon btn--circular"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
 								>
 									<i class="bx bx-dots-vertical-rounded"></i>
 								</a>
@@ -654,6 +662,411 @@
 						<span>new</span>
 					</div>
 				</article>
+
+				<!-- Move to CART  -->
+				<article class="card card--vertical card--badge card--shopping">
+					<div class="card__content flex">
+						<header class="card__header flex-center">
+							<figure class="card__figure">
+								<img
+									class="card_img"
+									src="https://picsum.photos/400/300"
+									alt="randomly generated"
+								/>
+							</figure>
+						</header>
+						<div class="card__body">
+							<div class="card__header_text">
+								<h2 class="card__title">Cricket Bag</h2>
+								<h3 class="card__subtitle">
+									MRF Genius Cameo Senior Cricket Kit Bag
+								</h3>
+							</div>
+							<p class="card__para">
+								Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Reic
+								iendis sint perspi ciatis
+							</p>
+							<p class="card__price flex">
+								<span class="disc_price">₹1,500</span>
+								<span class="original_price">₹2,000</span>
+								<span class="pct_disc">25% off</span>
+							</p>
+						</div>
+					</div>
+					<div class="card__footer">
+						<div class="card__actions">
+							<button class="card__button btn btn--outline--primary">
+								Move to Cart
+							</button>
+							<button class="card__button btn btn--primary">Buy Now</button>
+						</div>
+						<ul class="card__icons">
+							<li class="card__list flex-center">
+								<a
+									href="#"
+									class="card__link btn btn--outline--primary btn--icon btn--circular like"
+								>
+									<i class="bx bx-heart"></i>
+								</a>
+							</li>
+							<li class="card__list">
+								<a
+									href="#"
+									class="card__link btn btn--outline--primary btn--icon btn--circular share"
+								>
+									<i class="bx bx-share-alt"></i>
+								</a>
+							</li>
+							<li class="card__list">
+								<a
+									href="#"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
+								>
+									<i class="bx bx-dots-vertical-rounded"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card__badge ribbon">
+						<span>new</span>
+					</div>
+				</article>
+
+				<!-- Go to CART Primary  -->
+				<article class="card card--vertical card--badge card--shopping">
+					<div class="card__content flex">
+						<header class="card__header flex-center">
+							<figure class="card__figure">
+								<img
+									class="card_img"
+									src="https://picsum.photos/400/300"
+									alt="randomly generated"
+								/>
+							</figure>
+						</header>
+						<div class="card__body">
+							<div class="card__header_text">
+								<h2 class="card__title">Cricket Bag</h2>
+								<h3 class="card__subtitle">
+									MRF Genius Cameo Senior Cricket Kit Bag
+								</h3>
+							</div>
+							<p class="card__para">
+								Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Reic
+								iendis sint perspi ciatis
+							</p>
+							<p class="card__price flex">
+								<span class="disc_price">₹1,500</span>
+								<span class="original_price">₹2,000</span>
+								<span class="pct_disc">25% off</span>
+							</p>
+						</div>
+					</div>
+					<div class="card__footer">
+						<div class="card__actions">
+							<button class="card__button btn btn--outline--primary">
+								Go to Cart
+							</button>
+							<button class="card__button btn btn--primary">Buy Now</button>
+						</div>
+						<ul class="card__icons">
+							<li class="card__list flex-center">
+								<a
+									href="#"
+									class="card__link btn btn--outline--primary btn--icon btn--circular like"
+								>
+									<i class="bx bx-heart"></i>
+								</a>
+							</li>
+							<li class="card__list">
+								<a
+									href="#"
+									class="card__link btn btn--outline--primary btn--icon btn--circular share"
+								>
+									<i class="bx bx-share-alt"></i>
+								</a>
+							</li>
+							<li class="card__list">
+								<a
+									href="#"
+									class="options card__link btn btn--outline--primary btn--icon btn--circular"
+								>
+									<i class="bx bx-dots-vertical-rounded"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card__badge ribbon">
+						<span>new</span>
+					</div>
+				</article>
+			</div>
+
+			<!-- snippet_container -->
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// Just change the classes in article element to get different variants
+					<article class="card card--vertical card--shopping">
+						// complete code at the bottom of the page
+				</script>
+			</div>
+
+			<!-- Shopping CARDS -->
+			<h3>Shopping Cards Horizontal</h3>
+
+			<!-- difference added card--shopping class, card--horizontal and share, like and options classes in card__link -->
+
+			<!-- Card Component Code display -->
+
+			<div class="comp_container flex-center comp_container--cards">
+				<article class="card card--horizontal_v2 card--badge card--shopping">
+					<div class="card__content flex">
+						<header class="card__header flex-center">
+							<figure class="card__figure">
+								<img
+									class="card_img"
+									src="https://picsum.photos/400/300"
+									alt="randomly generated"
+								/>
+							</figure>
+						</header>
+						<div class="card__body">
+							<div class="card__header_text">
+								<h2 class="card__title">Cricket Bag</h2>
+								<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+							</div>
+							<p class="card__para">
+								Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Reic
+								iendis sint perspi ciatis
+							</p>
+							<p class="card__price flex">
+								<span class="disc_price">₹1,500</span>
+								<span class="original_price">₹2,000</span>
+								<span class="pct_disc">25% off</span>
+							</p>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular like"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card__badge ribbon">
+						<span>new</span>
+					</div>
+				</article>
+				
+				<!-- Move to CART  -->
+				<article class="card card--horizontal_v2 card--badge card--shopping">
+					<div class="card__content flex">
+						<header class="card__header flex-center">
+							<figure class="card__figure">
+								<img
+									class="card_img"
+									src="https://picsum.photos/400/300"
+									alt="randomly generated"
+								/>
+							</figure>
+						</header>
+						<div class="card__body">
+							<div class="card__header_text">
+								<h2 class="card__title">Cricket Bag</h2>
+								<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+							</div>
+							<p class="card__para">
+								Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Reic
+								iendis sint perspi ciatis
+							</p>
+							<p class="card__price flex">
+								<span class="disc_price">₹1,500</span>
+								<span class="original_price">₹2,000</span>
+								<span class="pct_disc">25% off</span>
+							</p>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Move to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular like"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card__badge ribbon">
+						<span>new</span>
+					</div>
+				</article>
+
+				<!-- Go to CART Primary  -->
+				<article class="card card--horizontal_v2 card--badge card--shopping">
+					<div class="card__content flex">
+						<header class="card__header flex-center">
+							<figure class="card__figure">
+								<img
+									class="card_img"
+									src="https://picsum.photos/400/300"
+									alt="randomly generated"
+								/>
+							</figure>
+						</header>
+						<div class="card__body">
+							<div class="card__header_text">
+								<h2 class="card__title">Cricket Bag</h2>
+								<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+							</div>
+							<p class="card__para">
+								Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Reic
+								iendis sint perspi ciatis
+							</p>
+							<p class="card__price flex">
+								<span class="disc_price">₹1,500</span>
+								<span class="original_price">₹2,000</span>
+								<span class="pct_disc">25% off</span>
+							</p>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Go to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular like"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card__badge ribbon">
+						<span>new</span>
+					</div>
+				</article>
+			</div>
+
+			<!-- snippet_container -->
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// Just change the classes in article element to get different variants
+					<article class="card card--vertical card--shopping">
+						// complete code at the bottom of the page
+				</script>
+			</div>
+
+			<!-- Card Component Code display -->
+			<h3>Complete Code Snippet for Different Card Variants</h3>
+			<!-- snippet_container -->
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// This is complete code of vertical card with badge component,
+					// to change the variant just change the classes in article element.
+					<article class="card card--vertical card--badge">
+						<div class="card__content flex">
+							<header class="card__header flex-center">
+								<figure class="card__figure">
+									<img
+										class="card_img"
+										src="https://picsum.photos/400/300"
+										alt="randomly generated"
+									/>
+								</figure>
+							</header>
+							<div class="card__body">
+								<div class="card__header_text">
+									<h2 class="card__title">Cricket Bag</h2>
+									<h3 class="card__subtitle">
+										MRF Genius Cameo Senior Cricket Kit Bag
+									</h3>
+								</div>
+								<p class="card__para">
+									Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Reic
+									iendis sint perspi ciatis
+								</p>
+								<p class="card__price flex">
+									<span class="disc_price">₹1,500</span>
+									<span class="original_price">₹2,000</span>
+									<span class="pct_disc">25% off</span>
+								</p>
+							</div>
+						</div>
+						<div class="card__footer">
+							<div class="card__actions">
+								<button class="card__button btn btn--outline--primary">
+									Add to Cart
+								</button>
+								<button class="card__button btn btn--primary">Buy Now</button>
+							</div>
+							<ul class="card__icons">
+								<li class="card__list flex-center">
+									<a
+										href="#"
+										class="card__link btn btn--outline--primary btn--icon btn--circular"
+									>
+										<i class="bx bx-heart"></i>
+									</a>
+								</li>
+								<li class="card__list">
+									<a
+										href="#"
+										class="card__link btn btn--outline--primary btn--icon btn--circular"
+									>
+										<i class="bx bx-share-alt"></i>
+									</a>
+								</li>
+								<li class="card__list">
+									<a
+										href="#"
+										class="options card__link btn btn--outline--primary btn--icon btn--circular"
+									>
+										<i class="bx bx-dots-vertical-rounded"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card__badge ribbon">
+							<span>new</span>
+						</div>
+					</article>
 				</script>
 			</div>
 
