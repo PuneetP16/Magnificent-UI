@@ -76,7 +76,7 @@
 }
 
 .card__actions button {
-	padding: 5px 6px;
+	padding: 6px 6px;
 }
 
 .card .card__icons .card__link {
@@ -249,14 +249,13 @@
 	right: 6px;
 	backdrop-filter: blur(4px);
 	z-index: 2;
-	padding:0;
+	padding: 0;
 	/* transition: box-shadow 1s ease-in-out; */
-
 }
 
 .card__dismiss:hover {
 	box-shadow: 0px 0px 1px 1px var(--COLOR-CARD-BOX-SHADOW2),
-	0px 0px 1px 5px var(--COLOR-CARD-BOX-SHADOW3);
+		0px 0px 1px 5px var(--COLOR-CARD-BOX-SHADOW3);
 }
 
 .light {
@@ -273,3 +272,53 @@
 }
 
 /* dismiss end*/
+
+/* ------------------ Shopping Cards ---------------  */
+
+.card--shopping .card__price {
+	margin: auto;
+	justify-content: center;
+}
+
+.card--shopping .card__button {
+	padding: 5px 10px;
+}
+
+.card--shopping * {
+	text-align: center;
+	/* justify-content: center; */
+}
+
+.card--shopping .card__footer .share,
+.card--shopping .card__footer .options {
+	display: none;
+}
+
+.card--shopping .card__body .card__para {
+	display: none;
+}
+
+/* ---- CARD-SHOPPING: HORIZONTAL ----  */
+.card--horizontal_v2 {
+	max-width: 49rem;
+}
+
+.card--horizontal_v2 .card__body {
+	min-width: 21.75rem;
+}
+
+.card--horizontal_v2 .card__footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding: 0;
+}
+
+.card--horizontal_v2 .card__footer > .card__actions,
+.card--horizontal_v2 .card__footer > .card__icons {
+	flex-flow: column wrap;
+}
+
+.card--horizontal_v2 .card__button {
+	min-width: 10.7rem;
+}
