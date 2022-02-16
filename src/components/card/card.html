@@ -1075,7 +1075,9 @@
 										<option class="input_box" value="9">10</option>
 									</select>
 								</div>
-								<a class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center">
+								<a
+									class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center"
+								>
 									<i class="bx bxs-trash-alt"></i>
 								</a>
 							</div>
@@ -1111,11 +1113,11 @@
 						<i class="bx bx-x"></i>
 					</div>
 				</article>
-
-				<!-- Move to CART  -->
-
-				<!-- Go to CART Primary  -->
 			</div>
+
+			<!-- Move to CART  -->
+
+			<!-- Go to CART Primary  -->
 
 			<!-- snippet_container -->
 			<div class="snippet_container">
@@ -1123,9 +1125,50 @@
 					type="text/plain"
 					class="line-numbers language-css snippet_container__script"
 				>
-					// Just change the classes in article element to get different variants
-					<article class="card card--horizontal_v2 card--shopping">
-						// complete code at the bottom of the page
+						<article
+						class="card card--shopping card--cart card--horizontal_v2 card--dismiss"
+					>
+						// ............same as before
+							<p class="card__price flex">
+								<span class="disc_price">₹1,500</span>
+								<span class="original_price">₹2,000</span>
+								<span class="pct_disc">25% off</span>
+							</p>
+						// Add this element
+							<div class="card__quantity_wrapper">
+								<div class="card__quantity form__input_box">
+									<label class="label" for="">Quantity:</label>
+									<select class="card__quantity_values">
+										<option class="input_box" value="1">1</option>
+										<option class="input_box" value="2" selected>2</option>
+										<option class="input_box" value="3">3</option>
+										<option class="input_box" value="4">4</option>
+										<option class="input_box" value="5">5</option>
+										<option class="input_box" value="6">6</option>
+										<option class="input_box" value="7">7</option>
+										<option class="input_box" value="8">8</option>
+										<option class="input_box" value="9">9</option>
+										<option class="input_box" value="9">10</option>
+									</select>
+								</div>
+								<a
+									class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center"
+								>
+									<i class="bx bxs-trash-alt"></i>
+								</a>
+							</div>
+								//  ADD Footer here..
+						</div>
+
+						<div class="card__badge ribbon">
+							<span>new</span>
+						</div>
+						<div
+							class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+						>
+							<i class="bx bx-x"></i>
+						</div>
+					</article>
 				</script>
 			</div>
 
