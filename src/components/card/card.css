@@ -680,8 +680,29 @@
 
 /* Shopping Card Variant: Cart--portrait  */
 
+.card--cart {
+	max-width: 51rem;
+	gap: 0;
+}
+
+.card--cart .card__body {
+	min-width: 25rem;
+	padding: 0;
+	justify-content: space-evenly;
+	gap: 0;
+}
+
+.card--cart .card__price {
+	margin: 0 auto;
+	gap: 1.2rem;
+}
+
 .card--cart .display--none {
 	display: none;
+}
+
+.card--cart .card__button {
+	padding: 8px 1rem;
 }
 
 .card__quantity_wrapper,
@@ -690,7 +711,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-flow: row nowrap;
-	gap: 1rem;
+	gap: 1.2rem;
 }
 
 .card__quantity_wrapper .card_btn--delete {
