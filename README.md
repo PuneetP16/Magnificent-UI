@@ -44,16 +44,25 @@ There are two ways in which you could do so.
 
 ---
 
-- [1. Typography](#typography)
-- [2. Alerts](#alert)
-- [3. Buttons](#button)
-- [4. Avatar](#avatar)
-- [5. Badge](#badge)
-- [6. Cards](#card)
-- [7. Image](#image)
-- [8. Input](#input)
-- [9. Snackbar](#snackbar)
-- [10. Lists](#lists)
+> [1. Typography](#typography)
+
+> [2. Alerts](#alert)
+
+> [3. Buttons](#button)
+
+> [4. Avatar](#avatar)
+
+> [5. Badge](#badge)
+
+> [6. Cards](#card)
+
+> [7. Image](#image)
+
+> [8. Input](#input)
+
+> [9. Snackbar](#snackbar)
+
+> [10. Lists](#lists)
 
 ---
 
