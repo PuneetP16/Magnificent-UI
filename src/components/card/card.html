@@ -16,6 +16,9 @@
 		<header class="header flex">
 			<div class="brand__text grid-center">Magnificent UI</div>
 			<div class="social__handles">
+				<a class="social__links theme__toggler">
+					<i class="bx bxs-moon"></i>
+				</a>
 				<a href="#" class="social__links">
 					<i class="bx bxl-twitter"></i>
 				</a>
@@ -112,7 +115,7 @@
 				6. Text only cards. <br />
 				7. Shopping Cards Vertical. <br />
 				8. Shopping Cards Horizontal. <br />
-			9. Shopping Cards Variant: Cart. <br />
+				9. Shopping Cards Variant: Cart. <br />
 				<br />
 				Use following classes with class <strong>"card"</strong> to get that
 				style of the card.
@@ -1035,9 +1038,7 @@
 			<!-- Card Component Code display -->
 
 			<div class="comp_container flex-center comp_container--cards">
-				<article
-					class="card card--shopping card--cart card--horizontal_v2"
-				>
+				<article class="card card--shopping card--cart card--horizontal_v2">
 					<div class="card__content flex">
 						<header class="card__header flex-center">
 							<figure class="card__figure">
@@ -1091,7 +1092,9 @@
 									>
 										Add to Cart
 									</button>
-									<button class="card__button btn btn--outline--primary">Move to Wishlist</button>
+									<button class="card__button btn btn--outline--primary">
+										Move to Wishlist
+									</button>
 								</div>
 								<ul class="card__icons display--none">
 									<li class="card__list flex-center">
@@ -1257,5 +1260,6 @@
 		</main>
 		<script src="/src/components/button/button.js"></script>
 		<script src="/src/javascript/prism.js"></script>
+		<script src="/src/javascript/darkmodetoggler.js"></script>
 	</body>
 </html>

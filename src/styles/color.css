@@ -1,6 +1,7 @@
 :root {
 	--COLOR-WHITE: white;
 	--COLOR-BLACK: black;
+	--COLOR-TXT:black;
 
 	/* --MY--THEME- */
 	--COLOR-BG: #e9eef6;
@@ -46,6 +47,7 @@
 	--COLOR-ACTIVE: aqua;
 
 	/* CARD */
+	--COLOR-CARD-BG: white;
 	--COLOR-DISCOUNT-BG: #ffebcd;
 	--COLOR-CARD-BOX-SHADOW0: rgb(0 0 0 / 20%);
 	--COLOR-CARD-BOX-SHADOW1: rgba(0, 0, 0, 0.56);
