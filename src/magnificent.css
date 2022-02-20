@@ -1,6 +1,9 @@
 /* reset css */
 @import url(/src/styles/base-style.css);
 
+/* font library */
+@import url("https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css");
+
 /* utilities */
 @import url(/src/styles/utilities.css);
 @import url(/src/styles/snippet_theme.css);
