@@ -1,6 +1,6 @@
 .snackbar {
 	border-radius: 5px;
-	background-color: var(--COLOR-PRIMARY);
+	background-color: var(--COLOR-PRIMARY-DARK);
 	color: var(--COLOR-WHITE);
 	font-weight: 400;
 }

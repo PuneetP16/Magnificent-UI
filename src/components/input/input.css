@@ -6,7 +6,7 @@
 }
 
 .label {
-	color: var(--COLOR-PRIMARY);
+	color: var(--COLOR-TXT);
 }
 
 .form__input_box {
@@ -24,6 +24,7 @@
 	padding: 0.7rem 1rem;
 	border: 2px solid var(--COLOR-PRIMARY);
 	background-color: var(--COLOR-BG);
+	color: var(--COLOR-TXT);
 }
 
 input[type="range" i] {

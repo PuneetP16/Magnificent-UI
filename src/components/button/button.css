@@ -154,6 +154,7 @@
 	border: 0;
 	opacity: 0.9;
 	box-shadow: none;
+	color: var(--COLOR-TXT);
 }
 
 .btn--close--white {

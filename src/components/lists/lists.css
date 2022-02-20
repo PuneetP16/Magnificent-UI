@@ -10,6 +10,7 @@
 	padding: 0 1rem;
 	border-radius: 8px;
 	border: 1px solid var(--COLOR-PRIMARY);
+	background-color: var(--COLOR-BG);
 }
 
 .lists__spaced {
@@ -29,7 +30,7 @@
 	padding: 2px 8px;
 	width: 100%;
 	border-radius: 8px;
-	color: var(--COLOR-BLACK);
+	color: var(--COLOR-TXT);
 }
 
 .lists__links:hover {

@@ -1,6 +1,6 @@
 .card {
 	position: relative;
-	background-color: var(--COLOR-WHITE);
+	background-color: var(--COLOR-CARD-BG);
 	margin: auto;
 	border: 1px solid var(--COLOR-OFFWHITE);
 	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -346,14 +346,7 @@
 	gap: 1rem;
 }
 
-.card {
-	position: relative;
-	background-color: var(--COLOR-WHITE);
-	margin: auto;
-	border: 1px solid var(--COLOR-OFFWHITE);
-	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-	border-radius: 5px;
-}
+
 
 .card:hover {
 	box-shadow: 0px 5px 40px 0px var(--COLOR-CARD-BOX-SHADOW1);
