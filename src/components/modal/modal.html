@@ -185,18 +185,15 @@
 				</div>
 
 
-				// javascript
-				const modalShowBtn = document.querySelector("#show_modal__btn");
-				const modalCloseBtn = document.querySelector("#modal_close__btn");
-				const modalWrapperBtn = document.querySelector(".modalWrapperBtn_container");
+	// javascript
+const modalShowBtn = document.querySelector("#show_modal__btn");
+const modalCloseBtn = document.querySelector("#modal_close__btn");
+const modalWrapperBtn = document.querySelector(".modal_container");
 
-				modalWrapperBtnShowBtn.addEventListener("click", () => {
-					modalWrapperBtn.style.display = "flex";
-				});
+modalShowBtn.addEventListener("click", () => { modalWrapperBtn.style.display = "flex";});
 
-				modalWrapperBtnCloseBtn.addEventListener("click", () => {
-					modalWrapperBtn.style.display = "none";
-				});
+modalCloseBtn.addEventListener("click", () => {	modalWrapperBtn.style.display = "none";
+});
 
 			</script>
 		</div>
