@@ -9,7 +9,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/style.css" />
-		<title>Typography</title>
+		<title>Slider</title>
 	</head>
 
 	<body>
@@ -38,7 +38,7 @@
 						<a class="nav__links" href="/src/components/usage/usage.html">Usage</a>
 					</li>
 					
-					<li class="nav__list"><a class="nav__links nav_link--selected" href="/src/components/typography/typography.html">Typography</a></li>
+					<li class="nav__list"><a class="nav__links" href="/src/components/typography/typography.html">Typography</a></li>
 				</ul>
 				<h1 class="h4 nav__head">Components</h1>
 				<ul class="nav__items flex-col-align-center">
@@ -107,8 +107,8 @@
 							>Navigation</a
 						>
 					</li>
-					<li class="nav__list">
-						<a class="nav__links" href="/src/components/slider/slider.html"
+                    <li class="nav__list">
+						<a class="nav__links nav_link--selected" href="/src/components/slider/slider.html"
 							>Slider</a
 						>
 					</li>
@@ -118,12 +118,11 @@
 			<!-- Main Start -->
 	
 			<main class="main">
-				<!-- ----Typography----- -->
+				<!-- ----SLIDER----- -->
 	
-				<h2 class="h2 m_doc__heading">Typography</h2>
+				<h2 class="h2 m_doc__heading">Slider</h2>
 				<p class="m_doc__para">
-                    Typography component makes it easy to apply a default set of font weights and sizes in your application.
-					Use typography to present your design and content as clearly and efficiently as possible. 
+					Slider allows user to make a selection of a value from a range of values.
 				</p>
 	
 				<!-- SNIPPET CONTAINER -->
@@ -134,68 +133,36 @@
 						class="line-numbers language-css snippet_container__script"
 					>
 						// CSS
-						@import url("https://magnificentui.netlify.app/src/components/typography/typography.css");
+						@import url("https://magnificentui.netlify.app/src/components/slider/slider.css");
 	
 						// HTML
-						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/typography/typography.css">
+						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/slider/slider.css">
 					</script>
 				</div>
-	
-				<!-- Headings component -->
-				<h3>Headings</h3>
-	
-				<p class="m_doc__para">
-					The heading has 6 sizes.
-					<span class="m_doc_class">
-						<span class="m_doc_class__item">h1</span>
-						<span class="m_doc_class__item">h2</span>
-						<span class="m_doc_class__item">h3</span>
-						<span class="m_doc_class__item">h4</span>
-						<span class="m_doc_class__item">h5</span>
-						<span class="m_doc_class__item">h6</span>
-					</span>
-				</p>
-	
-				<!-- component display container -->
-				<div class="comp_container flex-col">
-                    <h1 class="h1">h1. Heading</h1>
-                    <h2 class="h2">h2. Heading</h2>
-                    <h3 class="h3">h3. Heading</h3>
-                    <h4 class="h4">h4. Heading</h4>
-                    <h5 class="h5">h5. Heading</h5>
-                    <h6 class="h6">h6. Heading</h6>
-				</div>
-	
-				<!-- code snippet container -->
-	
-				<div class="snippet_container">
-					<script
-						type="text/plain"
-						class="line-numbers language-css snippet_container__script"
-					>
-                    <h1 class="h1">h1. Heading</h1>
-                    <h2 class="h2">h2. Heading</h2>
-                    <h3 class="h3">h3. Heading</h3>
-                    <h4 class="h4">h4. Heading</h4>
-                    <h5 class="h5">h5. Heading</h5>
-                    <h6 class="h6">h6. Heading</h6>
-					</script>
-				</div>
-	
-				<!--  Font CDN -->
-				<h3>Font and its CDN</h3>
-                Fontsource can be configured to load specific subsets, weights and styles. 
-				<p class="m_doc__para">
-					
-					<span class="m_doc_class">
-                        
-					</span>
-				</p>
+                
+                <!-- Standard Slider -->
+                <h3>Standard Slider</h3>
+                
+                <p class="m_doc__para">
+                    <span class="m_doc_class">
+                        <span class="m_doc_class__item">range__slider</span>
+                    </span>
+                </p>
 	
 				<!-- component display container -->
 				<div class="comp_container flex-center">
-					<h1>This is an IBM Plex Sans font</h1>
-				</div>
+                    <section class="filter__section">
+                        <h3 class="h5 filter__head">Price</h3>
+                        <ul class="range__head">
+                            <li class="range__amount">50</li>
+                            <li class="range__amount">150</li>
+                            <li class="range__amount">250</li>
+                        </ul>
+                        <input type="range" min="500" max="2500" value="1500" class="range__slider">
+                    </section>
+                </div>
+                </div>
+                
 	
 				<!-- code snippet container -->
 	
@@ -204,23 +171,76 @@
 						type="text/plain"
 						class="line-numbers language-css snippet_container__script"
 					>
-                    //CSS
-                    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap");
-                    
-                    // HTML
-                    <link
-                    rel="stylesheet"
-                    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                    />
-					</script>
-				</div>
+                    <section class="filter__section">
+                        <h3 class="h5 filter__head">Price</h3>
+                        <ul class="range__head">
+                            <li class="range__amount">50</li>
+                            <li class="range__amount">150</li>
+                            <li class="range__amount">250</li>
+                        </ul>
+                        <input type="range" min="500" max="2500" value="1500" class="range__slider">
+                    </section>
+			        </script>
+		        </div>
+
+                <!-- Standard Slider -->
+                <h3>Slider with Icon</h3>
+                
+                <p class="m_doc__para">
+                    <span class="m_doc_class">
+                        <span class="m_doc_class__item">range__slider</span>
+                        <span class="m_doc_class__item">range__slider--icon</span>
+                    </span>
+                </p>
 	
+				<!-- component display container -->
+				<div class="comp_container flex-center">
+                    <section class="filter__section">
+                        <h3 class="h5 filter__head">Volume</h3>
+                        <ul class="range__head range__head--icon">
+                            <li class="range__amount">50</li>
+                            <li class="range__amount">150</li>
+                            <li class="range__amount">250</li>
+                        </ul>
+                        <div class="range__slider--icon">
+                            <i class='bx bxs-volume-full'></i>
+                            <input type="range" min="500" max="2500" value="1500" class="range__slider">
+                        </div>
+                    </section>
+                  </div>
+                </div>
+                
+	
+				<!-- code snippet container -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
+					>
+                    <section class="filter__section">
+                        <h3 class="h5 filter__head">Volume</h3>
+                        <ul class="range__head range__head--icon">
+                            <li class="range__amount">50</li>
+                            <li class="range__amount">150</li>
+                            <li class="range__amount">250</li>
+                        </ul>
+                        <div class="range__slider--icon">
+                            <i class='bx bxs-volume-full'></i>
+                            <input type="range" min="500" max="2500" value="1500" class="range__slider">
+                        </div>
+                    </section>
+			        </script>
+		        </div>
+
 				<p class="units_instruction">
 					<span><b>Note: </b></span><span>Used 10px as root font size.</span>
 				</p>
+
 			</main>
 			<script src="/src/javascript/prism.js"></script>
-		<script src="/src/javascript/darkmodetoggler.js"></script>
+		    <script src="/src/javascript/darkmodetoggler.js"></script>
 			<script src="/src/javascript/app.js"></script>
+
 		</body>
 </html>

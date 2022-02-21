@@ -1,0 +1,26 @@
+.grid_wrapper {
+	width: 100%;
+	padding: 2rem;
+	max-height: 10rem;
+	gap: 2rem;
+	background-color: var(--COLOR-TXT-PRIMARY);
+	border-radius: 4px;
+}
+
+.grid_two_columns {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_three_columns {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_item {
+    display: grid;
+	place-content: center;
+	border-radius: 4px;
+	color: var(--COLOR-TXT);
+	background-color: var(--COLOR-BG);
+}
