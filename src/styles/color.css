@@ -1,7 +1,8 @@
 :root {
 	--COLOR-WHITE: white;
 	--COLOR-BLACK: black;
-	--COLOR-TXT:black;
+	--COLOR-TXT: black;
+	--COLOR-TXT-PRIMARY: var(--COLOR-PRIMARY);
 
 	/* --MY--THEME- */
 	--COLOR-BG: #e9eef6;
