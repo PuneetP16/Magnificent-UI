@@ -103,12 +103,12 @@
 			<!-- Main Start -->
 	
 			<main class="main">
-				<!-- ----MODAL----- -->
+				<!-- ----RATING----- -->
 	
-				<h2 class="h2 m_doc__heading">Modal</h2>
+				<h2 class="h2 m_doc__heading">RATING</h2>
 				<p class="m_doc__para">
-					The modal component provides a solid foundation for creating dialogs.
-                    popovers, lightboxes, or whatever else.
+					Ratings provide insight regarding others' opinions and experiences, 
+					and can allow the user to submit a rating of their own.
 				</p>
 	
 				<!-- SNIPPET CONTAINER -->
@@ -119,18 +119,16 @@
 						class="line-numbers language-css snippet_container__script"
 					>
 						// CSS
-						@import url("https://magnificentui.netlify.app/src/components/modal/modal.css");
+						@import url("https://magnificentui.netlify.app/src/components/rating/rating.css");
 	
 						// HTML
-						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/modal/modal.css">
+						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/rating/rating.css">
 					</script>
 				</div>
 
 				<p class="m_doc__para">
-					To use the modal component, use the classes mentioned in the code snippet and for the functionality add the javasciprt. Example
 					<span class="m_doc_class">
-						<span class="m_doc_class__item">modal</span>
-						<span class="m_doc_class__item">modal_container</span>
+						<span class="m_doc_class__item">rating</span>
 					</span>
 				</p>
 	
@@ -153,40 +151,13 @@
 						type="text/plain"
 						class="line-numbers language-css snippet_container__script"
 					>
-					<button class="btn btn--primary" id="show_modal__btn">Open Modal</button>
-       
-				</div>
-				<div class="modal_container">
-
-					<article class="modal">
-						<header class="modal__header">
-						  <h3>Modal</h3>      
-						  <div id="modal_close__btn" class="btn btn--icon btn--close--transparent btn--circular dark">
-							  <i class="bx bx-x"></i>
-							</div>
-						  </button>
-						</header>
-						<p class="modal-description">
-						  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						  Deserunt ad voluptatum.
-						</p>
-					</article>
-				</div>
-
-
-				// javascript
-				const modalShowBtn = document.querySelector("#show_modal__btn");
-				const modalCloseBtn = document.querySelector("#modal_close__btn");
-				const modalWrapperBtn = document.querySelector(".modalWrapperBtn_container");
-
-				modalWrapperBtnShowBtn.addEventListener("click", () => {
-					modalWrapperBtn.style.display = "flex";
-				});
-
-				modalWrapperBtnCloseBtn.addEventListener("click", () => {
-					modalWrapperBtn.style.display = "none";
-				});
-
+					<div class="rating">
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bx-star'></i>
+						<i class='bx bx-star'></i>
+						<i class='bx bx-star'></i>
+					</div>
 			</script>
 		</div>
 
