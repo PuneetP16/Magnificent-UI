@@ -7,6 +7,7 @@
 
 .rating i {
 	color: var(--COLOR-TXT-PRIMARY);
+    cursor: pointer;
 }
 
 .rating i:hover {
