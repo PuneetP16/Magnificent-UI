@@ -1,0 +1,49 @@
+.filter__section .filter__head {
+	margin-bottom: 8px;
+}
+
+.range__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 7px;
+}
+
+.range__amount {
+	list-style: none;
+}
+
+.range__slider {
+	appearance: none;
+	width: 100%;
+	background-color: var(--COLOR-BG);
+	border-radius: 8px;
+	height: 8px;
+	color: #000;
+}
+
+.range__slider--icon {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	gap: 2rem;
+}
+
+.range__slider--icon i {
+	font-size: 2.4rem;
+	color: var(--COLOR-TXT-PRIMARY);
+}
+
+.range__head--icon {
+	justify-content: flex-end;
+	gap: 2.6rem;
+}
+
+.range__slider:hover::-webkit-slider-thumb {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.range__slider:hover::-moz-range-thumb {
+	cursor: pointer;
+	transform: scale(1.1);
+}

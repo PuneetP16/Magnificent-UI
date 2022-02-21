@@ -9,7 +9,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/style.css" />
-		<title>Modal</title>
+		<title>Rating</title>
 	</head>
 
 	<body>
@@ -88,7 +88,7 @@
 						>
 					</li>
 					<li class="nav__list">
-						<a class="nav__links nav_link--selected" href="/src/components/modal/modal.html"
+						<a class="nav__links" href="/src/components/modal/modal.html"
 							>Modal</a
 						>
 					</li>
@@ -98,11 +98,11 @@
 						>
 					</li>
 					<li class="nav__list">
-						<a class="nav__links" href="/src/components/grid/grid.html"
+						<a class="nav__links nav_link--selected" href="/src/components/grid/grid.html"
 							>Grid</a
 						>
 					</li>
-					<li class="nav__list">
+                    <li class="nav__list">
 						<a class="nav__links" href="/src/components/navigation/navigation.html"
 							>Navigation</a
 						>
@@ -118,12 +118,11 @@
 			<!-- Main Start -->
 	
 			<main class="main">
-				<!-- ----MODAL----- -->
+				<!-- ----RATING----- -->
 	
-				<h2 class="h2 m_doc__heading">Modal</h2>
+				<h2 class="h2 m_doc__heading">Grid</h2>
 				<p class="m_doc__para">
-					The modal component provides a solid foundation for creating dialogs.
-                    popovers, lightboxes, or whatever else.
+					Grid helps users to better understand the information as it's shown in a more structured and logical way.
 				</p>
 	
 				<!-- SNIPPET CONTAINER -->
@@ -134,43 +133,32 @@
 						class="line-numbers language-css snippet_container__script"
 					>
 						// CSS
-						@import url("https://magnificentui.netlify.app/src/components/modal/modal.css");
+						@import url("https://magnificentui.netlify.app/src/components/grid/grid.css");
 	
 						// HTML
-						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/modal/modal.css">
+						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/components/grid/grid.css">
 					</script>
 				</div>
 
+
+                <!-- 2 Item Grid -->
+                <h3>2 Item Grid</h3>
+
 				<p class="m_doc__para">
-					To use the modal component, use the classes mentioned in the code snippet and for the functionality add the javasciprt. Example
+                    The most basic list group is an unordered list with list items.
 					<span class="m_doc_class">
-						<span class="m_doc_class__item">modal</span>
-						<span class="m_doc_class__item">modal_container</span>
+						<span class="m_doc_class__item">grid_two_columns</span>
 					</span>
 				</p>
 	
 				<!-- component display container -->
 				<div class="comp_container flex-center">
-					<span class="h4">Click here to open modal ---></span>
-                    <button class="btn btn--primary" id="show_modal__btn">Open Modal</button>
-       
-				</div>
-				<div class="modal_container">
-
-					<article class="modal">
-						<header class="modal__header">
-						  <h3>Modal</h3>      
-						  <div id="modal_close__btn" class="btn btn--icon btn--close--transparent btn--circular dark">
-							  <i class="bx bx-x"></i>
-							</div>
-						  </button>
-						</header>
-						<p class="modal-description">
-						  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						  Deserunt ad voluptatum.
-						</p>
-					</article>
-				</div>
+                    <div class="grid_wrapper grid_two_columns">
+                        <div class="grid_item">grid_item_one</div>
+                        <div class="grid_item">grid_item_two</div>
+                      </div>
+                </div>
+                
 	
 				<!-- code snippet container -->
 	
@@ -179,40 +167,48 @@
 						type="text/plain"
 						class="line-numbers language-css snippet_container__script"
 					>
-					<button class="btn btn--primary" id="show_modal__btn">Open Modal</button>
-       
-				</div>
-				<div class="modal_container">
+                    <div class="grid_wrapper grid_two_columns">
+                        <div class="grid_item">grid_item_one</div>
+                        <div class="grid_item">grid_item_two</div>
+                    </div>      
+			        </script>
+		        </div>
 
-					<article class="modal">
-						<header class="modal__header">
-						  <h3>Modal</h3>      
-						  <div id="modal_close__btn" class="btn btn--icon btn--close--transparent btn--circular dark">
-							  <i class="bx bx-x"></i>
-							</div>
-						  </button>
-						</header>
-						<p class="modal-description">
-						  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						  Deserunt ad voluptatum.
-						</p>
-					</article>
-				</div>
+                <!-- 3 Item Grid -->
+                <h3>3 Item Grid</h3>
 
-
-	// javascript
-const modalShowBtn = document.querySelector("#show_modal__btn");
-const modalCloseBtn = document.querySelector("#modal_close__btn");
-const modalWrapperBtn = document.querySelector(".modal_container");
-
-modalShowBtn.addEventListener("click", () => { modalWrapperBtn.style.display = "flex";});
-
-modalCloseBtn.addEventListener("click", () => {	modalWrapperBtn.style.display = "none";
-});
-
-			</script>
-		</div>
-
+				<p class="m_doc__para">
+                    The most basic list group is an unordered list with list items.
+					<span class="m_doc_class">
+						<span class="m_doc_class__item">grid_three_columns</span>
+					</span>
+				</p>
+	
+				<!-- component display container -->
+				<div class="comp_container flex-center">
+                    <div class="grid_wrapper grid_three_columns">
+                        <div class="grid_item">grid_item_one</div>
+                        <div class="grid_item">grid_item_two</div>
+                        <div class="grid_item">grid_item_three</div>
+                      </div>
+                </div>
+                
+	
+				<!-- code snippet container -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
+					>
+                    <div class="grid_wrapper grid_three_columns">
+                        <div class="grid_item">grid_item_one</div>
+                        <div class="grid_item">grid_item_two</div>
+                        <div class="grid_item">grid_item_two</div>
+                    </div>
+			        </script>
+		        </div>
+                
 				<p class="units_instruction">
 					<span><b>Note: </b></span><span>Used 10px as root font size.</span>
 				</p>
@@ -221,7 +217,6 @@ modalCloseBtn.addEventListener("click", () => {	modalWrapperBtn.style.display = 
 			<script src="/src/javascript/prism.js"></script>
 		    <script src="/src/javascript/darkmodetoggler.js"></script>
 			<script src="/src/javascript/app.js"></script>
-			<script src="/src/components/modal/modal.js"></script>
 
 		</body>
 </html>
