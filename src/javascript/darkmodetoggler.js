@@ -6,6 +6,7 @@ const rootEl = document.querySelector(":root");
 const enableDarkMode = (e) => {
 	rootEl.style.setProperty("--COLOR-BG", "#0c1e3a");
 	rootEl.style.setProperty("--COLOR-TXT", "#c6ddff");
+	rootEl.style.setProperty("--COLOR-TXT-PRIMARY", "#c6ddff");
 	rootEl.style.setProperty("--COLOR-OFFWHITE", "#2255A4");
 	rootEl.style.setProperty("--COLOR-CARD-BG", "#0c1e3a");
 	localStorage.setItem("darkmode", "enabled");
@@ -14,6 +15,7 @@ const enableDarkMode = (e) => {
 const disableDarkMode = (e) => {
 	rootEl.style.setProperty("--COLOR-BG", "#e6f0ff");
 	rootEl.style.setProperty("--COLOR-TXT", "#000000");
+	rootEl.style.setProperty("--COLOR-TXT-PRIMARY", "#2255a4");
 	rootEl.style.setProperty("--COLOR-OFFWHITE", "#d3dded");
 	rootEl.style.setProperty("--COLOR-CARD-BG", "white");
 	localStorage.setItem("darkmode", null);

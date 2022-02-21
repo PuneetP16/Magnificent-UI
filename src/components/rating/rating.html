@@ -9,7 +9,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/style.css" />
-		<title>Modal</title>
+		<title>Rating</title>
 	</head>
 
 	<body>
@@ -88,12 +88,12 @@
 						>
 					</li>
 					<li class="nav__list">
-						<a class="nav__links nav_link--selected" href="/src/components/modal/modal.html"
+						<a class="nav__links" href="/src/components/modal/modal.html"
 							>Modal</a
 						>
 					</li>
 					<li class="nav__list">
-						<a class="nav__links" href="/src/components/rating/rating.html"
+						<a class="nav__links nav_link--selected" href="/src/components/rating/rating.html"
 							>Ratings</a
 						>
 					</li>
@@ -136,26 +136,15 @@
 	
 				<!-- component display container -->
 				<div class="comp_container flex-center">
-					<span class="h4">Click here to open modal ---></span>
-                    <button class="btn btn--primary" id="show_modal__btn">Open Modal</button>
-       
-				</div>
-				<div class="modal_container">
-
-					<article class="modal">
-						<header class="modal__header">
-						  <h3>Modal</h3>      
-						  <div id="modal_close__btn" class="btn btn--icon btn--close--transparent btn--circular dark">
-							  <i class="bx bx-x"></i>
-							</div>
-						  </button>
-						</header>
-						<p class="modal-description">
-						  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						  Deserunt ad voluptatum.
-						</p>
-					</article>
-				</div>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                </div>
+                
 	
 				<!-- code snippet container -->
 	
@@ -209,7 +198,6 @@
 			<script src="/src/javascript/prism.js"></script>
 		    <script src="/src/javascript/darkmodetoggler.js"></script>
 			<script src="/src/javascript/app.js"></script>
-			<script src="/src/components/modal/modal.js"></script>
 
 		</body>
 </html>

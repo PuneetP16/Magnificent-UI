@@ -1,0 +1,15 @@
+.rating {
+	display: inline-flex;
+	gap: 6px;
+	padding: 0.5rem 1rem;
+	font-size: 2.4rem;
+}
+
+.rating i {
+	color: var(--COLOR-TXT-PRIMARY);
+}
+
+.rating i:hover {
+	color: var(--COLOR-PRIMARY-DARK);
+	font-weight: 800;
+}
