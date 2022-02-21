@@ -64,6 +64,8 @@ There are two ways in which you could do so.
 
 > [10. Lists](#lists)
 
+> [11. Darkmode Toggle](#Dark)
+
 ---
 
 ### Typography
@@ -225,6 +227,12 @@ You will find the following types of _Rating_ on https://magnificentui.netlify.a
 > Stacked List
 
 ---
+
+### Dark Mode Toggle
+
+- Theme can be toggled between light mode and dark mode by clicking the toggle located at the topright corner of every page.
+
+- Theme will remain persistent between different browser sessions. (Implemented local storage to store theme memory)
 
 ## Running the Component Library Locally
 
