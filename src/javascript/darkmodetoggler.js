@@ -1,4 +1,3 @@
-console.log("SCRIPT COMING!!");
 const btnElList = document.querySelectorAll(".theme__toggler");
 let darkMode = localStorage.getItem("darkmode");
 const bodyEl = document.querySelector("body");

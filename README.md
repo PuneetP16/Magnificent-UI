@@ -226,6 +226,19 @@ You will find the following types of _Rating_ on https://magnificentui.netlify.a
 
 ---
 
+## Running the Component Library Locally
+
+1. First: Clone the repository by running the command in your terminal.
+
+```
+git clone git@github.com:PuneetP16/Magnificent-UI.git
+
+```
+
+2. A directory named "Magnificent-UI" will be created on your machine.
+
+3. Go to the index.html and use the live server to run the project.
+
 <br>
 
 #### 👨‍💻 Lets connect !
