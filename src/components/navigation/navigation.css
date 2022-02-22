@@ -1,5 +1,6 @@
 .comp_container .header {
-    background-color: var(--COLOR-BG);
+	background-color: var(--COLOR-BG);
+	gap:1rem;
 }
 
 .header {
@@ -66,7 +67,7 @@
 	font-weight: 500;
 	width: fit-content;
 	color: var(--COLOR-TXT);
-    margin-left:4rem;
+	margin-left: 4rem;
 }
 
 /* Search BOX  */

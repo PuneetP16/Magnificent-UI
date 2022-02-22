@@ -54,15 +54,15 @@
 	.show .main {
 		display: none;
 	}
+
+	.header .search_box {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 500px) {
 	html {
 		font-size: 50%;
-	}
-
-	.header .search_box {
-		display: none;
 	}
 
 	.comp_container .brand__text {

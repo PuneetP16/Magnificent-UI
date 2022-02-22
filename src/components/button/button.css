@@ -140,7 +140,7 @@
 
 .btn--icon {
 	align-items: center;
-	border-radius: 5;
+	border-radius: 5px;
 	cursor: pointer;
 	display: flex;
 	gap: 8px;
@@ -234,4 +234,10 @@
 
 .button--primary:hover {
 	opacity: 0.9;
+}
+
+.btn--scroll_top {
+	position: fixed;
+	bottom:5rem;
+	right: 20rem;
 }
