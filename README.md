@@ -10,7 +10,11 @@ Live Demo Link: https://magnificentui.netlify.app
 <br>
 
 ---
+## WEBSITE VIDEO DEMO
 
+https://user-images.githubusercontent.com/91944618/155161971-f13b48d1-3ed9-4b5e-9557-0501e9312f47.mp4
+
+--
 ## Quick Start
 
 Installing Magnificent UI is very easy! </br>
