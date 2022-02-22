@@ -184,9 +184,26 @@ p {
 	color: var(--COLOR-ACTIVE);
 }
 
+/* mobile-icon nav bar  */
+
+.hamburger_icon {
+	display: none;
+	color: var(--COLOR-TXT);
+	font-size: 3.4rem;
+}
+
+.hamburger_icon:hover {
+	cursor: pointer;
+}
+
+/* MEDIA QUERIES  */
+
 @media only screen and (max-width: 720px) {
+	html {
+		font-size: 60%;
+	}
+
 	:root {
-		font-size: 65%;
 		--WIDTH-MAIN-CONTENT: 100%;
 	}
 
@@ -203,9 +220,7 @@ p {
 
 	body > .header,
 	.main {
-		justify-content: center;
 		padding: 10px;
-		gap: 2rem;
 	}
 
 	body .display--modifier {
@@ -215,18 +230,42 @@ p {
 	.social__handles {
 		padding-right: 0;
 	}
+
+	.nav {
+		display: none;
+	}
+
+	.hamburger_icon {
+		display: block;
+		color: var(--COLOR-TXT);
+		font-size: 3.4rem;
+	}
+
+	.show {
+		backdrop-filter: blur(10px);
+		position: relative;
+	}
+
+	.show .main {
+		display: none;
+	}
+
+	.show .nav {
+		display: flex;
+		z-index: 88;
+		position: sticky;
+		top: 50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		justify-content: flex-start;
+		padding-top: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	:root {
-		font-size: 62%;
-	}
-
-	body > .header,
-	.main {
-		justify-content: center;
-		padding: 10px;
-		gap: 10px;
+	html {
+		font-size: 58%;
 	}
 
 	.header .search_box {
@@ -248,19 +287,12 @@ p {
 }
 
 @media only screen and (max-width: 400px) {
-	:root {
+	html {
 		font-size: 60%;
 	}
 
 	.nav__links {
 		width: 10rem;
-	}
-
-	body > .header,
-	.main {
-		justify-content: center;
-		padding: 10px;
-		gap: 0;
 	}
 
 	.social__links {
