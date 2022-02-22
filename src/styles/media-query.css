@@ -22,7 +22,7 @@
 	body > .header,
 	.main {
 		padding: 0;
-		padding: 1rem 3rem;
+		padding: 1.5rem 3rem 1rem;
 	}
 
 	body .display--modifier {
@@ -35,7 +35,7 @@
 
 	.nav {
 		display: none;
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 
 	.hamburger_icon {
@@ -77,7 +77,7 @@
 
 @media only screen and (max-width: 400px) {
 	html {
-		font-size: 40%;
+		font-size: 45%;
 	}
 
 	.nav__links {
