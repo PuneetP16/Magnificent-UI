@@ -12,7 +12,7 @@ Live Demo Link: https://magnificentui.netlify.app
 ---
 ## WEBSITE VIDEO DEMO
 
-https://user-images.githubusercontent.com/91944618/155161971-f13b48d1-3ed9-4b5e-9557-0501e9312f47.mp4
+https://user-images.githubusercontent.com/91944618/155164033-dd63d5fc-50ad-4abd-a142-2dd9bf165ffb.mp4
 
 --
 ## Quick Start
