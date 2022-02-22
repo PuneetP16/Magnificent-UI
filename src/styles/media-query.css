@@ -43,12 +43,12 @@
 	}
 
 	.show .nav {
-		text-align: center;
 		display: flex;
 		z-index: var(--z-index-4);
 		position: sticky;
 		top: 50px;
 		padding-top: 0;
+		padding: 0.2rem 0.6rem;
 	}
 
 	.show .main {
