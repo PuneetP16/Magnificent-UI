@@ -12,143 +12,171 @@
 		<title>Magnificent UI</title>
 	</head>
 
-	<body>
-		<header class="header flex">
-			<div class="brand__text grid-center">Magnificent UI</div>
-			<div class="social__handles">
-				<a href="#" class="social__links">
-					<i class='bx bxl-twitter'></i>
-				</a>
-				<a href="#" class="social__links">
-					<i class='bx bxl-linkedin-square' ></i>
-				</a>
-				<a href="" class="social__links">
-					<i class='bx bxl-github' ></i>
-				</a>
-			</div>
-		</header>
-		<nav class="nav flex-col-align-center">
-			<h1 class="h4 nav__head">Get Started</h1>
-			<ul class="nav__items flex-col-align-center">
-				<li class="nav__list">
-					<a class="nav__links nav_link--selected" href="/src/components/usage/usage.html">Usage</a>
-				</li>
-				
-				<li class="nav__list"><a class="nav__links" href="/src/components/typography/typography.html">Typography</a></li>
-			</ul>
-			<h1 class="h4 nav__head">Components</h1>
-			<ul class="nav__items flex-col-align-center">
-				<li class="nav__list">
-					<a
-						class="nav__links"
-						href="/src/components/avatar/avatar.html"
-						>Avatar</a
+		<body>
+			<header class="header flex">
+				<div class="brand__text grid-center">Magnificent UI</div>
+				<div class="social__handles">
+					<a class="social__links theme__toggler">
+						<i class="bx bxs-moon"></i>
+					</a>
+					<a href="#" class="social__links">
+						<i class="bx bxl-twitter"></i>
+					</a>
+					<a href="#" class="social__links display--modifier">
+						<i class="bx bxl-linkedin-square"></i>
+					</a>
+					<a href="" class="social__links">
+						<i class="bx bxl-github"></i>
+					</a>
+				</div>
+			</header>
+			<nav class="nav flex-col-align-center">
+				<h1 class="h4 nav__head">Get Started</h1>
+				<ul class="nav__items flex-col-align-center">
+					<li class="nav__list">
+						<a class="nav__links nav_link--selected" href="/src/components/usage/usage.html">Usage</a>
+					</li>
+					
+					<li class="nav__list"><a class="nav__links" href="/src/components/typography/typography.html">Typography</a></li>
+				</ul>
+				<h1 class="h4 nav__head">Components</h1>
+				<ul class="nav__items flex-col-align-center">
+					<li class="nav__list">
+						<a
+							class="nav__links"
+							href="/src/components/avatar/avatar.html"
+							>Avatar</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/badge/badge.html"
+							>Badge</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/alert/alert.html"
+							>Alert</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/button/button.html"
+							>Button</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/card/card.html">Card</a>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/input/input.html"
+							>Input</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/image/image.html"
+							>Image</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/snackbar/snackbar.html"
+							>Snackbar</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/lists/lists.html"
+							>Lists</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/modal/modal.html"
+							>Modal</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/rating/rating.html"
+							>Ratings</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/grid/grid.html"
+							>Grid</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/navigation/navigation.html"
+							>Navigation</a
+						>
+					</li>
+					<li class="nav__list">
+						<a class="nav__links" href="/src/components/slider/slider.html"
+							>Slider</a
+						>
+					</li>
+				</ul>
+			</nav>
+	
+			<!-- Main Start -->
+	
+			<main class="main">
+				<!-- ----Introduction----- -->
+	
+				<h2 class="h2 m_doc__heading">Introduction</h2>
+				<p class="m_doc__para">
+                    Magnificent UI is a free, open source, and lightweight component library that allows developers to build sophisticated and minimalistic user interfaces for their websites.
+                    <br>
+                    Created using HTML, CSS and JavaScript, you will get a fully responsive components which will make your website look just MAGNIFICENT.
+				</p>
+                <br>
+
+                <!-- ----USAGE----- -->
+	
+				<h2 class="h2 m_doc__heading">Usage</h2>
+				<p class="m_doc__para">
+                    Installing Magnificent UI is very easy! </br>
+                    There are two ways in which you could do so. 
+                    <br>
+                    <br>
+				</p>
+
+                <h2 class="h3 m_doc__heading">1. Import using HTML TAG</h2>
+				<p class="m_doc__para">
+                    Just hit the <strong>"copy"</strong> button in below code snippet container and <strong>"paste"</strong> it in head tag of your HTML document above all your other stylesheets.
+				</p>
+
+                <!-- SNIPPET CONTAINER -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
 					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/badge/badge.html"
-						>Badge</a
+						<link rel="stylesheet" href="https://magnificentui.netlify.app/src/magnificent.css">
+					</script>
+				</div>
+
+                <h2 class="h3 m_doc__heading">2. Import using CSS Import</h2>
+				<p class="m_doc__para">
+                    Just hit the <strong>"copy"</strong> button in below code snippet container and <strong>"paste"</strong> it in your CSS stylesheet above all your other defined styles.
+				</p>
+	
+	
+				<!-- SNIPPET CONTAINER -->
+	
+				<div class="snippet_container">
+					<script
+						type="text/plain"
+						class="line-numbers language-css snippet_container__script"
 					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/alert/alert.html"
-						>Alert</a
-					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/button/button.html"
-						>Button</a
-					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/card/card.html">Card</a>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/input/input.html"
-						>Input</a
-					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/image/image.html"
-						>Image</a
-					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/snackbar/snackbar.html"
-						>Snackbar</a
-					>
-				</li>
-				<li class="nav__list">
-					<a class="nav__links" href="/src/components/lists/lists.html"
-						>Lists</a
-					>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- Main Start -->
-
-		<main class="main">
-			<!-- ----Introduction----- -->
-
-			<h2 class="h2 m_doc__heading">Introduction</h2>
-			<p class="m_doc__para">
-				Magnificent UI is a free, open source, and lightweight component library that allows developers to build sophisticated and minimalistic user interfaces for their websites.
-				<br>
-				Created using HTML, CSS and JavaScript, you will get a fully responsive components which will make your website look just MAGNIFICENT.
-			</p>
-			<br>
-
-			<!-- ----USAGE----- -->
-
-			<h2 class="h2 m_doc__heading">Usage</h2>
-			<p class="m_doc__para">
-				Installing Magnificent UI is very easy! </br>
-				There are two ways in which you could do so. 
-				<br>
-				<br>
-			</p>
-
-			<h2 class="h3 m_doc__heading">1. Import using HTML TAG</h2>
-			<p class="m_doc__para">
-				Just hit the <strong>"copy"</strong> button in below code snippet container and <strong>"paste"</strong> it in head tag of your HTML document above all your other stylesheets.
-			</p>
-
-			<!-- SNIPPET CONTAINER -->
-
-			<div class="snippet_container">
-				<script
-					type="text/plain"
-					class="line-numbers language-css snippet_container__script"
-				>
-					<link rel="stylesheet" href="https://magnificentui.netlify.app/src/magnificent.css">
-				</script>
-			</div>
-
-			<h2 class="h3 m_doc__heading">2. Import using CSS Import</h2>
-			<p class="m_doc__para">
-				Just hit the <strong>"copy"</strong> button in below code snippet container and <strong>"paste"</strong> it in your CSS stylesheet above all your other defined styles.
-			</p>
-
-
-			<!-- SNIPPET CONTAINER -->
-
-			<div class="snippet_container">
-				<script
-					type="text/plain"
-					class="line-numbers language-css snippet_container__script"
-				>
-				@import url("https://magnificentui.netlify.app/src/magnificent.css");
-				</script>
-			</div>
-
-
-			<p class="units_instruction">
-				<span><b>Note: </b></span><span>Used 10px as root font size.</span>
-			</p>
-		</main>
-		<script src="/src/javascript/prism.js"></script>
-		<script src="/src/javascript/darkmodetoggler.js"></script>
-		<script src="/src/javascript/app.js"></script>
-	</body>
+                    @import url("https://magnificentui.netlify.app/src/magnificent.css");
+					</script>
+				</div>
+	
+	
+				<p class="units_instruction">
+					<span><b>Note: </b></span><span>Used 10px as root font size.</span>
+				</p>
+			</main>
+			<script src="/src/javascript/prism.js"></script>
+			<script src="/src/javascript/darkmodetoggler.js"></script>
+			<script src="/src/javascript/app.js"></script>
+		</body>
 </html>

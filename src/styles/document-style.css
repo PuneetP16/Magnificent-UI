@@ -14,44 +14,12 @@ body {
 	margin: auto;
 }
 
-@media only screen and (max-width: 720px) {
-	:root {
-		font-size: 65%;
-		--WIDTH-MAIN-CONTENT: 100%;
-	}
-
-	body {
-		text-align: center;
-		grid-template-areas:
-			"header"
-			"nav"
-			"main";
-		grid-template-columns: 1fr;
-		grid-template-rows: max-content min-content 1fr;
-		height: auto;
-	}
-
-	.header,
-	.main {
-		justify-content: center;
-		padding: 10px !important;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	:root {
-		font-size: 60%;
-	}
-
-	.nav__links {
-		width: 10rem;
-	}
-}
-
 /* ---header--- */
 
 .header {
 	grid-area: header;
+	background-color: inherit;
+	z-index: 999;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -67,7 +35,7 @@ body {
 	font-weight: 500;
 	width: 22rem;
 	height: 100%;
-	color:var(--COLOR-TXT);
+	color: var(--COLOR-TXT);
 }
 
 .logo {
@@ -88,7 +56,7 @@ body {
 	font-weight: 500;
 	margin: 1rem 0 0.5rem 1rem;
 	font-size: 2.2rem;
-	color:var(--COLOR-WHITE)
+	color: var(--COLOR-WHITE);
 }
 
 .nav__items {
@@ -201,6 +169,7 @@ p {
 
 .social__links {
 	text-decoration: none;
+	display: flex;
 	font-size: 3.4rem;
 	color: var(--COLOR-TXT);
 }
@@ -208,9 +177,93 @@ p {
 .social__links:hover,
 .brand__text:hover {
 	color: var(--COLOR-PRIMARY);
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .social__links:active {
 	color: var(--COLOR-ACTIVE);
+}
+
+@media only screen and (max-width: 720px) {
+	:root {
+		font-size: 65%;
+		--WIDTH-MAIN-CONTENT: 100%;
+	}
+
+	body {
+		text-align: center;
+		grid-template-areas:
+			"header"
+			"nav"
+			"main";
+		grid-template-columns: 1fr;
+		grid-template-rows: max-content min-content 1fr;
+		height: auto;
+	}
+
+	body > .header,
+	.main {
+		justify-content: center;
+		padding: 10px;
+		gap: 2rem;
+	}
+
+	body .display--modifier {
+		display: none;
+	}
+
+	.social__handles {
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	:root {
+		font-size: 62%;
+	}
+
+	body > .header,
+	.main {
+		justify-content: center;
+		padding: 10px;
+		gap: 10px;
+	}
+
+	.header .search_box {
+		display: none;
+	}
+
+	.comp_container .brand__text {
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+	.header__nav_btns {
+		gap: 1rem;
+	}
+
+	.social__links {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	:root {
+		font-size: 60%;
+	}
+
+	.nav__links {
+		width: 10rem;
+	}
+
+	body > .header,
+	.main {
+		justify-content: center;
+		padding: 10px;
+		gap: 0;
+	}
+
+	.social__links {
+		font-size: 2.5rem;
+	}
 }
