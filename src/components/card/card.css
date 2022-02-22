@@ -182,7 +182,7 @@
 	position: absolute;
 	right: -5px;
 	top: -5px;
-	z-index: 1;
+	z-index: var(--z-index-2);
 	overflow: hidden;
 	width: 7.5rem;
 	height: 7.55rem;
@@ -216,7 +216,7 @@
 	position: absolute;
 	left: 0px;
 	top: 100%;
-	z-index: -1;
+	z-index: var(--z-index-1);
 	border-left: 3px solid var(--COLOR-RIBBON-PRIMARY);
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
@@ -228,7 +228,7 @@
 	position: absolute;
 	right: 0px;
 	top: 100%;
-	z-index: -1;
+	z-index: var(--z-index-1);
 	border-left: 3px solid transparent;
 	border-right: 3px solid var(--COLOR-RIBBON-PRIMARY);
 	border-bottom: 3px solid transparent;
@@ -249,7 +249,7 @@
 	top: 6px;
 	right: 6px;
 	backdrop-filter: blur(4px);
-	z-index: 2;
+	z-index: var(--z-index-3);
 	padding: 0;
 }
 
@@ -345,8 +345,6 @@
 	flex-flow: row nowrap;
 	gap: 1rem;
 }
-
-
 
 .card:hover {
 	box-shadow: 0px 5px 40px 0px var(--COLOR-CARD-BOX-SHADOW1);
@@ -522,7 +520,7 @@
 	position: absolute;
 	right: -5px;
 	top: -5px;
-	z-index: 1;
+	z-index: var(--z-index-2);
 	overflow: hidden;
 	width: 7.5rem;
 	height: 7.55rem;
@@ -556,7 +554,7 @@
 	position: absolute;
 	left: 0px;
 	top: 100%;
-	z-index: -1;
+	z-index: var(--z-index-1);
 	border-left: 3px solid var(--COLOR-RIBBON-PRIMARY);
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
@@ -568,7 +566,7 @@
 	position: absolute;
 	right: 0px;
 	top: 100%;
-	z-index: -1;
+	z-index: var(--z-index-1);
 	border-left: 3px solid transparent;
 	border-right: 3px solid var(--COLOR-RIBBON-PRIMARY);
 	border-bottom: 3px solid transparent;
@@ -589,7 +587,7 @@
 	top: 6px;
 	right: 6px;
 	backdrop-filter: blur(4px);
-	z-index: 2;
+	z-index: var(--z-index-3);
 	padding: 0;
 }
 

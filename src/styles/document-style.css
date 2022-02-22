@@ -19,7 +19,7 @@ body {
 .header {
 	grid-area: header;
 	background-color: inherit;
-	z-index: 999;
+	z-index: var(--z-index-5);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -195,4 +195,3 @@ p {
 .hamburger_icon:hover {
 	cursor: pointer;
 }
-

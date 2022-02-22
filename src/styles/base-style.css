@@ -25,6 +25,12 @@
 	/* CARD */
 	--PADDING-CARD-BODY: 1rem;
 	--PADDING-CARD-ELEM: 16px;
+
+	--z-index-1: 1;
+	--z-index-2: 2;
+	--z-index-3: 3;
+	--z-index-4: 4;
+	--z-index-5: 5;
 }
 
 /* Remove default margin */
