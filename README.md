@@ -14,7 +14,7 @@ Live Demo Link: https://magnificentui.netlify.app
 
 https://user-images.githubusercontent.com/91944618/155164033-dd63d5fc-50ad-4abd-a142-2dd9bf165ffb.mp4
 
---
+---
 ## Quick Start
 
 Installing Magnificent UI is very easy! </br>
@@ -64,7 +64,18 @@ There are two ways in which you could do so.
 
 > [10. Lists](#lists)
 
-> [11. Darkmode Toggle](#Dark)
+> [11. Modal](#modal)
+
+> [12. Rating](#rating)
+
+> [13. Grid](#grid)
+
+> [14. Navigation](#navigation)
+
+> [14. Slider](#slider)
+
+> [15. Darkmode](#darkmode)
+
 
 ---
 
@@ -212,7 +223,7 @@ You will find the following types of _Input_ on https://magnificentui.netlify.ap
 
 Snackbar provides brief messages about app processes at the bottom of the screen.
 
-You will find the following types of _Navigation_ on https://magnificentui.netlify.app/src/components/snackbar/snackbar.html
+You will find it on https://magnificentui.netlify.app/src/components/snackbar/snackbar.html
 
 ---
 
@@ -220,7 +231,7 @@ You will find the following types of _Navigation_ on https://magnificentui.netli
 
 Lists are used to display content in an ordered manner.
 
-You will find the following types of _Rating_ on https://magnificentui.netlify.app/src/components/lists/lists.html
+You will find it on https://magnificentui.netlify.app/src/components/lists/lists.html
 
 > Menu List
 
@@ -228,9 +239,52 @@ You will find the following types of _Rating_ on https://magnificentui.netlify.a
 
 ---
 
-### Dark Mode Toggle
+### Modal
 
-- Theme can be toggled between light mode and dark mode by clicking the toggle located at the topright corner of every page.
+The modal component provides a solid foundation for creating dialogs. popovers, lightboxes, or whatever else.
+
+You will find it on https://magnificentui.netlify.app/src/components/modal/modal.html
+
+---
+
+### Rating
+
+Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.
+
+You will find it on https://magnificentui.netlify.app/src/components/rating/rating.html
+
+---
+
+### Grid
+
+Grid helps users to better understand the information as it's shown in a more structured and logical way.
+
+You will find the following types of _Grid_ on https://magnificentui.netlify.app/src/components/grid/grid.html
+
+> 2 Item Grid
+
+> 3 Item Grid
+
+---
+
+### Navigation
+
+Navigation bar is used to navigate through the web apps or websites.
+
+You will find it on https://magnificentui.netlify.app/src/components/navigation/navigation.html
+
+---
+
+### Slider
+
+Slider allows user to make a selection of a value from a range of values.
+
+You will find it on https://magnificentui.netlify.app/src/components/slider/slider.html
+
+---
+### Darkmode
+
+- Theme can be toggled between light mode and dark mode by clicking the toggle located at the top-right corner of every page.
 
 - Theme will remain persistent between different browser sessions. (Implemented local storage to store theme memory)
 
