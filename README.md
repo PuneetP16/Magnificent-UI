@@ -1,10 +1,6 @@
-# MagnificentUI
-
 ## Magnificent UI Component Library
 
-#### - by Puneet Patel
-
-<br>
+### - by Puneet Patel
 
 ---
 
