@@ -14,7 +14,7 @@
 
 	<body>
 		<header class="header flex">
-			<i class='bx bx-menu hamburger_icon'></i>
+			<i class="bx bx-menu hamburger_icon"></i>
 			<div class="brand__text grid-center">Magnificent UI</div>
 			<div class="social__handles">
 				<a class="social__links theme__toggler">
@@ -145,7 +145,7 @@
 				</script>
 			</div>
 
-			<!-- Responsive Image -->
+			<!-- Input Component -->
 			<h3>Input Component</h3>
 
 			<p class="m_doc__para">
@@ -259,6 +259,135 @@
 							<label class="label" for="username">Username</label>
 							<input
 								class="input_box"
+								type="text"
+								name="username"
+								placeholder="jonhdoe123"
+							/>
+						</div>
+					</form>
+				</script>
+			</div>
+
+			<!-- Input Component with Validation -->
+			<h3>Input Component with Validation</h3>
+
+			<p class="m_doc__para">
+				You have two validation styles for the input and you can use the class
+				input__error and input__success for errors and success respectively.
+			</p>
+
+			<!-- component display container -->
+			<div class="comp_container flex-center">
+				<form class="form_wrapper flex" method="get">
+					<div class="form__input_box">
+						<label class="label" for="name">Full Name</label>
+						<input
+							class="input_box input__error"
+							type="text"
+							placeholder="John Doe"
+							name="name"
+						/>
+					</div>
+
+					<div class="form__input_box">
+						<label class="label" for="username">Username</label>
+						<input
+							class="input_box input__error"
+							type="text"
+							name="username"
+							placeholder="jonhdoe123"
+						/>
+					</div>
+
+					<div class="form__input_box">
+						<label class="label" for="Email">Email</label>
+						<input
+							class="input_box input__success"
+							type="email"
+							placeholder="something@yourmail.com"
+							name="email"
+							required
+						/>
+					</div>
+
+					<div class="form__input_box">
+						<label class="label" for="password">Password:</label>
+						<input
+							class="input_box input__error"
+							type="password"
+							name="password"
+							required
+						/>
+					</div>
+
+					<div class="form__radio_box flex-center">
+						<label class="label" for="lname">Radio buttons:</label>
+						<input class="radio" type="radio" name="radio" />
+						<input class="radio" type="radio" name="radio" />
+					</div>
+
+					<input class="date" type="date" name="date" />
+					<input
+						class="file_picker"
+						type="file"
+						class="btn btn--outline--primary"
+						name="file"
+					/>
+					<input class="range range__slider" type="range" name="range" />
+					<input
+						class="reset btn btn--outline--primary"
+						type="reset"
+						name="reset"
+					/>
+					<!-- Rectangular switch -->
+					<label class="switch">
+						<input type="checkbox" />
+						<span class="slider"></span>
+					</label>
+
+					<!-- Rounded switch -->
+					<label class="switch">
+						<input type="checkbox" />
+						<span class="slider round"></span>
+					</label>
+					<div class="textarea_container form__input_box">
+						<label class="label" for="story"
+							>Tell us about yourself in 50 words</label
+						>
+						<textarea
+							class="input_box input__error"
+							type="textarea"
+							name="textarea"
+							rows="10"
+							cols="40"
+							value="Write something mate"
+						></textarea>
+					</div>
+					<input
+						type="submit"
+						class="btn btn--outline--primary"
+						name="submit"
+						value="Subscribe"
+					/>
+				</form>
+			</div>
+
+			<!-- snippet_container -->
+			<div class="snippet_container">
+				<script
+					type="text/plain"
+					class="line-numbers language-css snippet_container__script"
+				>
+					// Just add class input__error or input__success for validation
+					// You can just use only the component which is needed
+					// from the complete code provided at the bottom of the page.
+					// for example use the below username component:
+
+					<form class="form flex" method="get">
+						<div class="form__input_box">
+							<label class="label" for="username">Username</label>
+							<input
+								class="input_box input__error"
 								type="text"
 								name="username"
 								placeholder="jonhdoe123"
