@@ -87,6 +87,10 @@ You will find the following types of _Typography_ on https://magnificentui.netli
 
 > Headings
 
+> Text
+
+> Text position and Gray text
+
 > Font and its CDN
 
 ---
@@ -216,7 +220,7 @@ You will find the following types of _Input_ on https://magnificentui.netlify.ap
 - Slider Input
 - Radio Input
 - Checkbox Input
-
+- Input Component with Validation
 ---
 
 ### Snackbar
