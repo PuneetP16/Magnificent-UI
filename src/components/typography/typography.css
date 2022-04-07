@@ -13,7 +13,7 @@ p,
 .h6,
 .p {
 	letter-spacing: 0.01em;
-	color:var(--COLOR-TXT);
+	color: var(--COLOR-TXT);
 }
 
 h1,
@@ -74,4 +74,58 @@ p,
 
 .body-sm {
 	font-size: 8px;
+}
+
+.text_comp__wrapper {
+	align-content: stretch;
+}
+
+.text__wrapper {
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.text__info {
+	margin-left: auto;
+}
+
+.text__xxxl {
+	font-size: 2em;
+}
+
+.text__xxl {
+	font-size: 1.5em;
+}
+
+.text__xl {
+	font-size: 1.25em;
+}
+
+.text__lg {
+	font-size: 1.17em;
+}
+
+.text__md {
+	font-size: 1em;
+}
+
+.text__sm {
+	font-size: 0.83em;
+}
+
+.text_comp_wrapper--position p {
+	width: 100%;
+}
+
+.text__center {
+	text-align: center;
+}
+
+.text__right {
+	text-align: right;
+}
+
+.text__muted {
+	color: var(--COLOR-GREY);
 }
