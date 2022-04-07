@@ -1,3 +1,7 @@
+:root {
+	--BORDER-2: 2px;
+}
+
 .form_wrapper {
 	gap: 20px;
 	width: 100%;
@@ -157,21 +161,21 @@ input[name="radio"] {
 }
 
 .input__error {
-	border: 2px solid var(--COLOR-DANGER);
+	border: var(--BORDER-2) solid var(--COLOR-DANGER);
 	outline: var(--COLOR-DANGER);
 }
 
 .input__error:hover {
-	border: 2px solid var(--COLOR-DANGER);
+	border: var(--BORDER-2) solid var(--COLOR-DANGER);
 	outline: var(--COLOR-DANGER);
 }
 
 .input__success {
-	border: 2px solid var(--COLOR-SUCCESS);
+	border: var(--BORDER-2) solid var(--COLOR-SUCCESS);
 	outline: var(--COLOR-SUCCESS);
 }
 
 .input__success:hover {
-	border: 2px solid var(--COLOR-SUCCESS);
+	border: var(--BORDER-2) solid var(--COLOR-SUCCESS);
 	outline: var(--COLOR-SUCCESS);
 }
