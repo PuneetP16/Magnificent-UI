@@ -155,23 +155,3 @@ input:checked + .slider:before {
 input[name="radio"] {
 	accent-color: var(--COLOR-PRIMARY);
 }
-
-.input__error {
-	border: 2px solid var(--COLOR-DANGER);
-	outline: var(--COLOR-DANGER);
-}
-
-.input__error:hover {
-	border: 2px solid var(--COLOR-DANGER);
-	outline: var(--COLOR-DANGER);
-}
-
-.input__success {
-	border: 2px solid var(--COLOR-SUCCESS);
-	outline: var(--COLOR-SUCCESS);
-}
-
-.input__success:hover {
-	border: 2px solid var(--COLOR-SUCCESS);
-	outline: var(--COLOR-SUCCESS);
-}
